@@ -1,0 +1,49 @@
+# ODAI — Managed AI Operations für Schweizer Unternehmen
+
+## Über ODAI
+ODAI ist ein Managed AI Operations Unternehmen mit Sitz in Baar, Kanton Zug, Schweiz. Wir bauen, betreiben und entwickeln die KI-Betriebsschicht für Schweizer Unternehmen mit 50–500 Mitarbeitenden.
+
+**Gründer:** Yannick Hirt, Baar ZG
+**Kontakt:** info@odcus.com
+**Website:** https://odai-landing.netlify.app
+**Sprache:** Deutsch (Schweiz)
+
+## Was wir tun
+Wir bauen einen strukturierten KI-Wissensspeicher (Unternehmenskontext) für Schweizer KMU — mit der Strategie, den Prozessen und der Entscheidungshistorie des Unternehmens. Das Ergebnis: Führungskräfte erhalten automatisch den Überblick, den sie brauchen — ohne manuellen Aufwand.
+
+## Kernnutzen
+- 40–70% weniger Koordinationsaufwand für Führungskräfte
+- 5 Minuten statt 2 Stunden für den täglichen Überblick
+- Implementierung in unter 6 Wochen bis zum ersten messbaren Nutzen
+- Volle Datensouveränität (Cloud oder vollständig lokal/On-Premises)
+- DSG- und DSGVO-konform
+
+## Dienstleistungen und Preise
+- **AI Tools Assessment:** CHF 999 — Bestandsaufnahme aller KI-Tools im Unternehmen, Ergebnis in einer Woche
+- **Phase 1 – Durchleuchtung:** CHF 15'000–25'000 — Analyse der Informationsflüsse, Identifikation der 3 grössten Hebel
+- **Phase 2 – Aufbau:** CHF 20'000–45'000 — Aufbau des Unternehmenskontexts und der KI-Werkzeuge
+- **Phase 3 – Managed Operations:** CHF 3'000–8'000/Monat — Laufender Betrieb, Pflege, Weiterentwicklung
+
+## Zielgruppe
+Schweizer Unternehmen mit 50–500 Mitarbeitenden. Branchen: Produktion, Dienstleistung, Handel, Gesundheit, Bau, Finanzen. Entscheider: Geschäftsführer, C-Level, Bereichsleiter (45–65 Jahre).
+
+## Differenzierung
+Im Gegensatz zu ChatGPT oder generischen KI-Tools kennt das ODAI-System das Unternehmen selbst — Strategie, Prozesse, Kennzahlen, Entscheidungshistorie. Das ist der "Unternehmenskontext", der den Unterschied macht.
+
+## Compliance
+Zwei Datensouveränitäts-Tracks:
+1. Cloud-basiert (gängige Enterprise-Anbieter)
+2. Vollständig lokal — keine Daten verlassen das Unternehmen, Open-Source-Modelle
+
+Beide Tracks sind DSG- (Schweizer Datenschutzgesetz) und DSGVO-konform.
+
+## Häufige Fragen
+**Ist KI reif genug für Schweizer KMU?** Für Briefings, Berichte und Entscheidungsvorlagen: ja. Wer heute anfängt, baut den Kontext auf, der den Vorsprung bringt.
+
+**Was unterscheidet ODAI von ChatGPT?** ChatGPT kennt Ihr Unternehmen nicht. ODAI baut einen strukturierten Wissensspeicher mit Ihrer Strategie, Organisation und Entscheidungshistorie.
+
+**Was kostet der Einstieg?** AI Tools Assessment: CHF 999. Phase 1 (Durchleuchtung): CHF 15'000–25'000. Dies entspricht weniger als einem Monatsgehalt einer Führungskraft.
+
+**Wie viel Zeit benötigen wir?** Phase 1 erfordert 3–4 Stunden Gespräche seitens des Kunden. Den Rest übernehmen wir.
+
+**Was wenn sich die Technologie ändert?** Unser Wert liegt im Unternehmenskontext, nicht im Tool. Bei Technologiewechseln migrieren wir.
