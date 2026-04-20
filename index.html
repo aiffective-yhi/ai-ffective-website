@@ -44,7 +44,6 @@ html{scroll-behavior:smooth}
   --color-white:#FFFFFF;
   --color-orange:#FF6B00;
   --color-burn:radial-gradient(ellipse at 38% 35%,#FFD700 0%,#FFAA00 12%,#FF6B00 28%,#FF3300 48%,#8B0000 68%,#3A0000 85%,#1A0800 100%);
-  /* Aliases for readability */
   --ink:var(--color-black);
   --secondary:#374151;
   --tertiary:#6B7280;
@@ -80,11 +79,11 @@ a{color:inherit;text-decoration:none}
 [data-r]:nth-child(5){transition-delay:.32s}
 
 /* ═══════════════════════════════════
-   NAV — dark, minimal
+   NAV — dark, fixed
    ═══════════════════════════════════ */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--color-black);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);transition:box-shadow .2s}
 nav.scrolled{box-shadow:0 1px 24px rgba(0,0,0,.4)}
-nav .w,nav .w-wide{display:flex;justify-content:space-between;align-items:center;padding:14px 32px;max-width:1040px;margin:0 auto}
+nav .w-wide{display:flex;justify-content:space-between;align-items:center;padding:14px 32px;max-width:1040px;margin:0 auto}
 .logo{font-family:var(--f-display);font-size:17px;font-weight:800;letter-spacing:0.02em;text-transform:uppercase;color:#fff}
 .logo .ai{color:var(--color-orange)}
 .logo .hy{color:rgba(255,255,255,.35);font-weight:700}
@@ -130,40 +129,45 @@ h2{font-family:var(--f-display);font-size:28px;font-weight:800;line-height:1.15;
 h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;letter-spacing:0.02em;text-transform:uppercase}
 .sub{font-family:var(--f-body);font-size:17px;color:var(--secondary);line-height:1.7;margin-top:16px;max-width:520px}
 
+/* Section eyebrow labels */
+.eyebrow{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:16px;display:block}
+.sec-label{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--color-orange);margin-bottom:12px;display:block}
+
+/* Orange underline for h2 on light sections */
+.sec h2::after,.sec-alt h2::after{content:'';display:block;width:36px;height:2px;background:var(--color-orange);margin-top:14px}
+
 /* ═══════════════════════════════════
-   HERO — dark near-black
+   HERO — full-bleed image
    ═══════════════════════════════════ */
 .hero{
-  padding:160px 0 100px;
-  background:var(--color-black);
   position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:160px 0 100px;
   overflow:hidden;
 }
-.hero::before{
-  content:'';
-  position:absolute;
-  top:-120px;right:-80px;
-  width:600px;height:600px;
-  background:radial-gradient(ellipse at center,rgba(255,107,0,.22) 0%,rgba(255,107,0,.06) 45%,transparent 70%);
-  pointer-events:none;
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(15,15,15,0.75) 0%,rgba(15,15,15,0.65) 60%,rgba(15,15,15,0.85) 100%);
 }
-.hero::after{
-  content:'';
-  position:absolute;
-  bottom:0;left:0;right:0;
-  height:1px;
-  background:linear-gradient(to right,transparent,rgba(255,107,0,.4),transparent);
-  pointer-events:none;
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:40px 40px;
 }
+.hero-content{position:relative;z-index:2}
 .hero h1{margin-bottom:20px;color:#fff}
 .hero h1 em{font-style:normal;color:var(--color-orange)}
 .hero .sub{margin-bottom:36px;max-width:480px;color:rgba(255,255,255,.65);font-weight:400}
-.hero-actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.hero-actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:13px 28px;border:none;cursor:pointer;transition:all .2s;border-radius:100px;text-decoration:none}
 .btn-p{background:var(--color-orange);color:#fff}
 .btn-p:hover{opacity:.88;transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,80,0,.35)}
-.btn-s{background:none;color:rgba(255,255,255,.5);padding:13px 0;border-radius:0;font-family:var(--f-body);font-size:14px;font-weight:500;text-transform:none;letter-spacing:0}
-.btn-s:hover{color:#fff}
+.btn-s{background:rgba(255,255,255,.1);color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.2);font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:13px 24px;border-radius:100px}
+.btn-s:hover{background:rgba(255,255,255,.16);color:#fff}
 .btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none}
 .hero-note{font-size:13px;color:rgba(255,255,255,.35);margin-bottom:8px;font-family:var(--f-body)}
 .hero-proof{margin-top:0;margin-bottom:60px;font-size:13px;color:rgba(255,255,255,.3);display:flex;gap:8px;align-items:center;font-family:var(--f-body)}
@@ -185,15 +189,18 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 .pain-cost strong{font-family:var(--f-display);font-size:30px;font-weight:900;flex-shrink:0;letter-spacing:0.02em;color:var(--color-orange)}
 .pain-cost p{font-size:15px;color:var(--secondary);font-family:var(--f-body)}
 
-/* Section eyebrow labels */
-.eyebrow{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:16px;display:block}
-.sec-label{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--color-orange);margin-bottom:12px;display:block}
+/* Pain item hover */
+.pain-item{cursor:default;transition:border-color .15s}
+.pain-item:hover{border-left:3px solid var(--color-orange);padding-left:16px;margin-left:-19px;transition:padding .15s,margin .15s}
 
-/* Orange underline for h2 on light sections */
-.sec h2::after,.sec-alt h2::after{content:'';display:block;width:36px;height:2px;background:var(--color-orange);margin-top:14px}
+/* PAIN — 2-col photo layout */
+.pain-grid{display:grid;grid-template-columns:1fr 380px;gap:72px;align-items:start}
+.pain-photo{position:sticky;top:96px}
+.pain-photo img{width:100%;height:560px;object-fit:cover;border-radius:2px;display:block;filter:grayscale(30%)}
+.pain-photo-cap{font-family:var(--f-body);font-size:12px;color:var(--tertiary);margin-top:10px;font-style:italic;line-height:1.5}
 
 /* ═══════════════════════════════════
-   SOLUTION — text-driven, no mockup
+   SOLUTION
    ═══════════════════════════════════ */
 .sol-example{margin-top:40px;padding:32px;background:#F5F5F5;font-size:15px;line-height:1.7;border:1px solid var(--color-gray);border-radius:8px}
 .sol-example p+p{margin-top:12px}
@@ -208,6 +215,41 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 .sol-what-item:hover{opacity:.8}
 .sol-what-item h3{margin-bottom:6px}
 .sol-what-item p{font-size:15px;color:var(--secondary);font-family:var(--f-body)}
+
+/* Feature card icon */
+.sol-icon{width:36px;height:36px;border-radius:8px;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.sol-icon svg{width:18px;height:18px;stroke:var(--color-orange);stroke-width:2;fill:none}
+
+/* Stylised UI mockup in solution section */
+.ui-mockup{margin-top:40px;border:1px solid var(--color-gray);border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.ui-mkbar{background:#F5F5F5;padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--color-gray)}
+.ui-dots{display:flex;gap:4px}
+.ui-dots span{width:9px;height:9px;border-radius:50%;background:var(--color-gray)}
+.ui-mktitle{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tertiary);margin-left:6px}
+.ui-mkbody{padding:20px 20px 24px;background:#fff;display:flex;flex-direction:column;gap:14px}
+.ui-msg{display:flex;gap:10px;align-items:flex-start}
+.ui-av{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-size:10px;font-weight:700;flex-shrink:0;margin-top:2px}
+.ui-av.u{background:rgba(255,107,0,.12);color:var(--color-orange)}
+.ui-av.a{background:var(--color-black);color:#fff}
+.ui-bub{font-family:var(--f-body);padding:10px 14px;border-radius:8px;font-size:13px;line-height:1.6;max-width:90%}
+.ui-bub.u{background:rgba(255,107,0,.08);color:var(--color-black);border:1px solid rgba(255,107,0,.2)}
+.ui-bub.a{background:#F5F5F5;color:var(--color-black);border:1px solid var(--color-gray)}
+.ui-bub strong{font-weight:600}
+
+/* ═══════════════════════════════════
+   APPLICATION CARDS (new section)
+   ═══════════════════════════════════ */
+.app-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:48px;border-radius:12px;overflow:hidden}
+.app-card{background:var(--color-black);display:flex;flex-direction:column}
+.app-card-img{position:relative;height:240px;overflow:hidden}
+.app-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.app-card:hover .app-card-img img{transform:scale(1.04)}
+.app-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,26,26,0.85) 0%,rgba(26,26,26,0.2) 100%)}
+.app-card-tag{position:absolute;top:16px;left:16px;font-family:var(--f-display);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--color-orange);padding:4px 12px;border-radius:100px}
+.app-card-body{padding:24px;flex:1}
+.app-card-body h3{color:#fff;margin-bottom:10px;font-size:15px;text-transform:uppercase;letter-spacing:.02em}
+.app-card-body p{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.65;font-family:var(--f-body)}
+.app-result{display:inline-block;margin-top:16px;font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--color-orange)}
 
 /* ═══════════════════════════════════
    SCENARIO
@@ -224,6 +266,44 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 .scenario-result{padding:20px 24px;background:#F5F5F5;border:1px solid var(--color-gray);border-radius:8px;font-size:15px;line-height:1.6;border-left:3px solid var(--color-orange)}
 .scenario-result strong{font-weight:700;color:var(--color-orange)}
 .scenario-note{font-size:12px;color:var(--tertiary);margin-top:12px;font-family:var(--f-body)}
+
+/* ═══════════════════════════════════
+   PHOTO BAND — dark divider with bg image
+   ═══════════════════════════════════ */
+.photo-band{
+  padding:120px 0;
+  background:var(--color-black);
+  position:relative;
+  overflow:hidden;
+}
+.pb-bg-img{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  opacity:0.15;
+}
+.photo-band::before{
+  content:'';
+  position:absolute;
+  top:50%;left:-10%;
+  transform:translateY(-50%);
+  width:70%;height:300%;
+  background:radial-gradient(ellipse at 30% 50%,rgba(255,107,0,.15) 0%,rgba(255,60,0,.05) 40%,transparent 65%);
+  pointer-events:none;
+}
+.photo-band .pb-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:28px 28px;
+  pointer-events:none;
+}
+.photo-band-inner{max-width:680px;padding:0 32px;position:relative;z-index:2}
+.photo-band-eyebrow{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--color-orange);margin-bottom:20px;display:block}
+.photo-band h2{color:#fff;font-size:clamp(26px,3vw,40px);line-height:1.1;letter-spacing:0.02em;font-weight:900;text-transform:uppercase}
+.photo-band h2::after{display:none}
+.photo-band-stats{display:flex;gap:56px;margin-top:52px;padding-top:40px;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
+.photo-band-stat-n{font-family:var(--f-display);font-size:38px;font-weight:900;color:#fff;letter-spacing:0.02em;line-height:1;text-transform:uppercase}
+.photo-band-stat-l{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.4);margin-top:6px;max-width:140px;line-height:1.4}
 
 /* ═══════════════════════════════════
    PHASES
@@ -243,6 +323,10 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 .phase-price{text-align:right;white-space:nowrap}
 .phase-price strong{font-family:var(--f-display);font-size:20px;font-weight:900;display:block;color:var(--color-orange);letter-spacing:0.02em}
 .phase-price span{font-family:var(--f-body);font-size:12px;color:var(--tertiary)}
+
+/* Phase number circles */
+.phase-num{width:32px;height:32px;border-radius:50%;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.25);color:var(--color-orange);font-family:var(--f-display);font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:8px}
+.entry-num{width:32px;height:32px;border-radius:100px;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.25);color:var(--color-orange);font-family:var(--f-display);font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:8px}
 
 /* ═══════════════════════════════════
    INDUSTRIES
@@ -264,6 +348,9 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 .ind-case h4{font-family:var(--f-display);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px;color:var(--color-black)}
 .ind-case p{font-family:var(--f-body);font-size:13px;color:var(--secondary);margin-bottom:4px}
 .ind-case .res{font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--color-orange)}
+
+/* Cursor on interactive elements */
+.ind-tab,.faq-q{cursor:pointer}
 
 /* ═══════════════════════════════════
    FAQ
@@ -314,48 +401,6 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 .cta-trust{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
 .cta-trust span{font-family:var(--f-body);font-size:12px;color:rgba(255,255,255,.3)}
 
-/* ═══════════════════════════════════
-   FOOTER
-   ═══════════════════════════════════ */
-footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.08);background:var(--color-black)}
-footer .w-wide{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
-footer .f-left{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.35)}
-footer .f-left strong{font-family:var(--f-display);font-weight:800;letter-spacing:.02em;text-transform:uppercase;color:#fff}
-footer .f-links{display:flex;gap:24px}
-footer .f-links a{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.35);transition:color .15s}
-footer .f-links a:hover{color:#fff}
-
-/* Feature card icon */
-.sol-icon{width:36px;height:36px;border-radius:8px;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-.sol-icon svg{width:18px;height:18px;stroke:var(--color-orange);stroke-width:2;fill:none}
-
-/* Phase number circles */
-.phase-num{width:32px;height:32px;border-radius:50%;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.25);color:var(--color-orange);font-family:var(--f-display);font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:8px}
-.entry-num{width:32px;height:32px;border-radius:100px;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.25);color:var(--color-orange);font-family:var(--f-display);font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:8px}
-
-/* Cursor on interactive elements */
-.ind-tab,.faq-q{cursor:pointer}
-
-/* Pain item hover */
-.pain-item{cursor:default;transition:border-color .15s}
-.pain-item:hover{border-left:3px solid var(--color-orange);padding-left:16px;margin-left:-19px;transition:padding .15s,margin .15s}
-
-/* Stylised UI mockup in solution section */
-.ui-mockup{margin-top:40px;border:1px solid var(--color-gray);border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-.ui-mkbar{background:#F5F5F5;padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--color-gray)}
-.ui-dots{display:flex;gap:4px}
-.ui-dots span{width:9px;height:9px;border-radius:50%;background:var(--color-gray)}
-.ui-mktitle{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tertiary);margin-left:6px}
-.ui-mkbody{padding:20px 20px 24px;background:#fff;display:flex;flex-direction:column;gap:14px}
-.ui-msg{display:flex;gap:10px;align-items:flex-start}
-.ui-av{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-size:10px;font-weight:700;flex-shrink:0;margin-top:2px}
-.ui-av.u{background:rgba(255,107,0,.12);color:var(--color-orange)}
-.ui-av.a{background:var(--color-black);color:#fff}
-.ui-bub{font-family:var(--f-body);padding:10px 14px;border-radius:8px;font-size:13px;line-height:1.6;max-width:90%}
-.ui-bub.u{background:rgba(255,107,0,.08);color:var(--color-black);border:1px solid rgba(255,107,0,.2)}
-.ui-bub.a{background:#F5F5F5;color:var(--color-black);border:1px solid var(--color-gray)}
-.ui-bub strong{font-weight:600}
-
 /* "Was passiert danach?" steps */
 .next-steps{display:flex;gap:0;margin:36px 0 32px;justify-content:center}
 .next-step{display:flex;gap:12px;align-items:flex-start;flex:1;max-width:200px;position:relative}
@@ -374,47 +419,29 @@ footer .f-links a:hover{color:#fff}
 .form-success{display:none;padding:20px;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.25);border-radius:8px;color:rgba(255,255,255,.8);font-size:15px;text-align:center;font-family:var(--f-body)}
 .form-success.show{display:block}
 
+/* ═══════════════════════════════════
+   FOOTER — multi-column
+   ═══════════════════════════════════ */
+footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-top{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-bottom:56px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08)}
+.f-logo{font-family:var(--f-display);font-size:22px;font-weight:900;letter-spacing:.02em;text-transform:uppercase;color:#fff;margin-bottom:12px}
+.f-logo span{color:var(--color-orange)}
+.f-tagline{font-family:var(--f-body);font-size:14px;color:rgba(255,255,255,.4);line-height:1.65;max-width:280px;margin-bottom:20px}
+.f-contact{display:flex;flex-direction:column;gap:4px}
+.f-contact a,.f-contact span{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.35)}
+.f-contact a:hover{color:var(--color-orange)}
+.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.fl-col{display:flex;flex-direction:column;gap:12px}
+.fl-col strong{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:4px}
+.fl-col a{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.45);transition:color .15s}
+.fl-col a:hover{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;font-family:var(--f-body);font-size:12px;color:rgba(255,255,255,.25)}
+
 /* Sticky mobile CTA */
 .sticky-mob{position:fixed;bottom:0;left:0;right:0;background:var(--color-orange);padding:16px 24px;z-index:200;text-align:center;transform:translateY(100%);transition:transform .3s cubic-bezier(.22,1,.36,1);display:none}
 .sticky-mob.show{transform:none}
 .sticky-mob a{color:#fff;font-weight:700;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
 @media(max-width:800px){.sticky-mob{display:block}}
-
-/* PAIN — 2-col photo layout */
-.pain-grid{display:grid;grid-template-columns:1fr 380px;gap:72px;align-items:start}
-.pain-photo{position:sticky;top:96px}
-.pain-photo img{width:100%;height:560px;object-fit:cover;border-radius:2px;display:block;filter:grayscale(30%)}
-.pain-photo-cap{font-family:var(--f-body);font-size:12px;color:var(--tertiary);margin-top:10px;font-style:italic;line-height:1.5}
-
-/* PHOTO BAND — dark divider with burn glow */
-.photo-band{
-  padding:120px 0;
-  background:var(--color-black);
-  position:relative;
-  overflow:hidden;
-}
-.photo-band::before{
-  content:'';
-  position:absolute;
-  top:50%;left:-10%;
-  transform:translateY(-50%);
-  width:70%;height:300%;
-  background:radial-gradient(ellipse at 30% 50%,rgba(255,107,0,.15) 0%,rgba(255,60,0,.05) 40%,transparent 65%);
-  pointer-events:none;
-}
-.photo-band .pb-grid{
-  position:absolute;inset:0;
-  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
-  background-size:28px 28px;
-  pointer-events:none;
-}
-.photo-band-inner{max-width:680px;padding:0 32px;position:relative}
-.photo-band-eyebrow{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--color-orange);margin-bottom:20px;display:block}
-.photo-band h2{color:#fff;font-size:clamp(26px,3vw,40px);line-height:1.1;letter-spacing:0.02em;font-weight:900;text-transform:uppercase}
-.photo-band h2::after{display:none}
-.photo-band-stats{display:flex;gap:56px;margin-top:52px;padding-top:40px;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
-.photo-band-stat-n{font-family:var(--f-display);font-size:38px;font-weight:900;color:#fff;letter-spacing:0.02em;line-height:1;text-transform:uppercase}
-.photo-band-stat-l{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.4);margin-top:6px;max-width:140px;line-height:1.4}
 
 /* ═══════════════════════════════════
    RESPONSIVE
@@ -423,7 +450,7 @@ footer .f-links a:hover{color:#fff}
   .n-links{display:none}
   .n-tog{display:flex;flex-direction:column}
   .sec{padding:64px 0}
-  .hero{padding:120px 0 64px}
+  .hero{padding:120px 0 64px;min-height:auto}
   h1{font-size:32px}
   h2{font-size:22px}
   .hero-stats{gap:24px}
@@ -438,7 +465,6 @@ footer .f-links a:hover{color:#fff}
   .phase-price{text-align:left}
   .pain-cost{flex-direction:column;gap:8px}
   .scenario-step{grid-template-columns:1fr;gap:4px}
-  footer .w-wide{flex-direction:column;align-items:flex-start}
   .w,.w-wide{padding:0 20px}
   .pain-grid{grid-template-columns:1fr}
   .pain-photo{display:none}
@@ -446,6 +472,10 @@ footer .f-links a:hover{color:#fff}
   .photo-band-inner{padding:0 20px}
   .photo-band h2{font-size:24px}
   .photo-band-stats{gap:32px}
+  .app-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr;gap:40px}
+  .footer-links{grid-template-columns:1fr 1fr}
+  .footer-bottom{flex-direction:column;gap:8px}
 }
 
 @media(max-width:480px){
@@ -459,6 +489,7 @@ footer .f-links a:hover{color:#fff}
   .phase{gap:8px}
   .ind-tabs{gap:0}
   .ind-tab{padding:8px 14px;font-size:10px}
+  .footer-links{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -491,11 +522,16 @@ footer .f-links a:hover{color:#fff}
 
 <main id="main">
 
-<!-- HERO -->
+<!-- HERO — full-bleed image -->
 <section class="hero">
-  <div class="w">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80&auto=format&fit=crop" alt="" aria-hidden="true" loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="w hero-content">
     <p class="eyebrow">AI-ffective · Managed AI Operations · Schweiz</p>
-    <h1>Ihre Führungskräfte koordinieren. Sie sollten führen.</h1>
+    <h1>Ihre Führungskräfte koordinieren.<br>Sie sollten führen.</h1>
     <p class="sub">Führungskräfte in Schweizer KMU verbringen zu viel Zeit damit, Informationen zu beschaffen statt Entscheidungen zu treffen. Wir bauen das System, das Ihnen diesen Überblick automatisch liefert — jeden Morgen, ohne dass Sie fragen müssen.</p>
     <div class="hero-actions">
       <a href="#cta" class="btn btn-p">Kostenlose Analyse buchen <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
@@ -610,8 +646,55 @@ footer .f-links a:hover{color:#fff}
   </div>
 </section>
 
+<!-- ANWENDUNGEN — card grid -->
+<section class="sec" id="anwendungen">
+  <div class="w-wide">
+    <span class="sec-label" data-r>Anwendungen</span>
+    <h2 data-r>KI im täglichen Betrieb</h2>
+    <p class="sub" data-r>Konkrete Einsatzfelder — so sieht intelligente Betriebsführung in der Praxis aus.</p>
+    <div class="app-grid">
+      <div class="app-card" data-r>
+        <div class="app-card-img">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80&auto=format&fit=crop" alt="Führungskräfte-Briefing" loading="lazy">
+          <div class="app-card-overlay"></div>
+          <div class="app-card-tag">Geschäftsführung</div>
+        </div>
+        <div class="app-card-body">
+          <h3>Automatisches Führungsbriefing</h3>
+          <p>Jeden Morgen um 8 Uhr: Überblick über Projektstatus, offene Entscheidungen und kritische KPIs — ohne eine einzige Anfrage.</p>
+          <span class="app-result">→ 2h täglich zurückgewonnen</span>
+        </div>
+      </div>
+      <div class="app-card" data-r>
+        <div class="app-card-img">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80&auto=format&fit=crop" alt="Entscheidungsvorlage" loading="lazy">
+          <div class="app-card-overlay"></div>
+          <div class="app-card-tag">Entscheidungen</div>
+        </div>
+        <div class="app-card-body">
+          <h3>Strukturierte Entscheidungsvorlagen</h3>
+          <p>Statt stundenlanger Vorbereitung: Das System kennt Ihre Entscheidungshistorie und liefert kontextualisierte Vorlagen in Minuten.</p>
+          <span class="app-result">→ 80% schnellere Vorbereitung</span>
+        </div>
+      </div>
+      <div class="app-card" data-r>
+        <div class="app-card-img">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80&auto=format&fit=crop" alt="Team-Koordination" loading="lazy">
+          <div class="app-card-overlay"></div>
+          <div class="app-card-tag">Operative Entlastung</div>
+        </div>
+        <div class="app-card-body">
+          <h3>Unternehmensgedächtnis</h3>
+          <p>Prozesse, Entscheidungen, Kundenwissen — strukturiert erfasst, jederzeit abrufbar. Kein Wissen geht verloren, wenn Mitarbeitende wechseln.</p>
+          <span class="app-result">→ Wissen bleibt im Unternehmen</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- SCENARIO -->
-<section class="sec">
+<section class="sec sec-alt">
   <div class="w">
     <h2 data-r>8 Stunden zurückgewonnen — in 8 Wochen</h2>
     <p class="sub" data-r>Ein typischer Verlauf: von der ersten Analyse bis zu den ersten gestrichenen Meetings und spürbarer Zeitersparnis.</p>
@@ -632,7 +715,7 @@ footer .f-links a:hover{color:#fff}
     </div>
     <p class="scenario-note" data-r>Illustratives Szenario basierend auf typischen Kundensituationen.</p>
 
-    <div style="margin-top:48px;padding:32px;background:#F5F5F5;border:1px solid var(--color-gray);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;" data-r>
+    <div style="margin-top:48px;padding:32px;background:#fff;border:1px solid var(--color-gray);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;" data-r>
       <div>
         <p style="font-family:var(--f-display);font-size:15px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--color-black);margin-bottom:4px;">Klingt das nach Ihrem Unternehmen?</p>
         <p style="font-family:var(--f-body);font-size:14px;color:var(--secondary);">30 Minuten, direkt mit einem unserer Berater. Offen, ohne Verkaufsdruck.</p>
@@ -642,8 +725,9 @@ footer .f-links a:hover{color:#fff}
   </div>
 </section>
 
-<!-- PHOTO BAND -->
-<section class="photo-band">
+<!-- PHOTO BAND — dark divider with bg image -->
+<section class="photo-band" id="warum">
+  <img class="pb-bg-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&auto=format&fit=crop" alt="" aria-hidden="true" loading="lazy">
   <div class="pb-grid"></div>
   <div class="photo-band-inner">
     <span class="photo-band-eyebrow">Managed AI Operations · Schweiz</span>
@@ -788,18 +872,47 @@ footer .f-links a:hover{color:#fff}
     <div class="form-success" id="formSuccess">Danke — wir melden uns innerhalb von 24 Stunden mit einem Terminvorschlag.</div>
     <p class="cta-note" data-r>Sie sprechen direkt mit einem Berater — kein Sales-Team, kein Zwang.</p>
     <div class="cta-trust" data-r>
-      <span>✓ Schweizer Unternehmen</span>
-      <span>✓ Volle Datensouveränität</span>
-      <span>✓ Kein Lock-in</span>
-      <span>✓ Kein Sales-Funnel</span>
+      <span>&#10003; Schweizer Unternehmen</span>
+      <span>&#10003; Volle Datensouveränität</span>
+      <span>&#10003; Kein Lock-in</span>
+      <span>&#10003; Kein Sales-Funnel</span>
     </div>
   </div>
 </section>
 
+<!-- FOOTER — multi-column -->
 <footer>
   <div class="w-wide">
-    <div class="f-left"><strong><span style="color:var(--color-orange)">AI</span><span style="color:rgba(255,255,255,.3);font-weight:400">-</span>ffective</strong> &middot; Schweiz &middot; <a href="mailto:info@odcus.com" style="color:rgba(255,255,255,.35)">info@odcus.com</a></div>
-    <div class="f-links"><a href="/datenschutz.html">Datenschutz</a><a href="/impressum.html">Impressum</a><span style="color:rgba(255,255,255,.25);font-size:12px">&copy; 2026</span></div>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">AI-<span>ffective</span></div>
+        <p class="f-tagline">Den Betrieb intelligent machen. Damit Führung wieder Führung sein kann.</p>
+        <div class="f-contact">
+          <a href="mailto:info@odcus.com">info@odcus.com</a>
+          <span>Zug, Schweiz</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col">
+          <strong>Angebot</strong>
+          <a href="#problem">Das Problem</a>
+          <a href="#loesung">Unsere Lösung</a>
+          <a href="#zusammenarbeit">Zusammenarbeit</a>
+          <a href="#branchen">Branchen</a>
+        </div>
+        <div class="fl-col">
+          <strong>Unternehmen</strong>
+          <a href="#faq">FAQ</a>
+          <a href="#cta">Kontakt</a>
+          <a href="/impressum.html">Impressum</a>
+          <a href="/datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&#169; 2026 AI-ffective — Managed AI Operations</span>
+      <span>Zug, Schweiz &middot; DSG-konform</span>
+    </div>
   </div>
 </footer>
 
