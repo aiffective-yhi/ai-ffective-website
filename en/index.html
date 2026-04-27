@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-ffective — AI Operations Management for Swiss Businesses</title>
+<meta name="description" content="AI operations layer for Swiss companies (50–500 employees). 40–70% less coordination overhead. Discovery from CHF 15,000 — Swiss data protection guaranteed.">
+<meta name="keywords" content="AI operations management Switzerland, Managed AI Operations, AI-ffective, intelligent operations management SME, AI for executives, business context AI">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="AI-ffective — AI Operations Management for Swiss Businesses">
+<meta property="og:description" content="We build the AI operations layer for Swiss businesses. So executives make better decisions — faster and with less overhead.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_CH">
+<meta property="og:url" content="https://ai-ffective.netlify.app/en/">
+<meta property="og:image" content="https://ai-ffective.netlify.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI-ffective — AI Operations Management for Swiss Businesses">
+<meta name="twitter:description" content="AI operations layer for Swiss companies. 40–70% less coordination overhead. Discovery from CHF 15,000.">
+<meta name="twitter:image" content="https://ai-ffective.netlify.app/og-image.png">
+<link rel="alternate" hreflang="de-CH" href="https://ai-ffective.netlify.app/">
+<link rel="alternate" hreflang="en" href="https://ai-ffective.netlify.app/en/">
+<link rel="alternate" hreflang="x-default" href="https://ai-ffective.netlify.app/">
+<link rel="canonical" href="https://ai-ffective.netlify.app/en/">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["Organization","LocalBusiness","ProfessionalService"],"@id":"https://ai-ffective.netlify.app/en/#org","name":"AI-ffective","description":"Managed AI Operations for Swiss businesses.","url":"https://ai-ffective.netlify.app","email":"info@ai-ffective.com","openingHours":"Mo-Fr 09:00-18:00","address":{"@type":"PostalAddress","addressLocality":"Zürich","addressRegion":"ZH","addressCountry":"CH"},"areaServed":{"@type":"Country","name":"Switzerland"},"priceRange":"CHF 999–200000+","foundingDate":"2026","hasOfferCatalog":{"@type":"OfferCatalog","name":"Managed AI Operations","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Tools Assessment"},"priceSpecification":{"@type":"PriceSpecification","price":"999","priceCurrency":"CHF"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Discovery"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"15000","maxPrice":"25000","priceCurrency":"CHF"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Build"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"20000","maxPrice":"45000","priceCurrency":"CHF"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Managed Operations"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"3000","maxPrice":"8000","priceCurrency":"CHF","unitText":"MONTH"}}]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is AI mature enough for Swiss companies?","acceptedAnswer":{"@type":"Answer","text":"For briefings, reports and decision papers it is already capable today. The question is not whether, but when — and who builds the company context that creates the competitive advantage."}},{"@type":"Question","name":"What makes AI-ffective different from ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"ChatGPT doesn't know your company — your strategy, processes, people. AI-ffective builds a structured knowledge store with your strategy, organisation and decision history."}},{"@type":"Question","name":"How secure is our data?","acceptedAnswer":{"@type":"Answer","text":"Two tracks: cloud-based or fully local with open-source models. DSG and GDPR compliant."}},{"@type":"Question","name":"What does it cost to get started?","acceptedAnswer":{"@type":"Answer","text":"AI Tools Assessment: CHF 999. Phase 1 (Discovery): CHF 15,000–25,000."}},{"@type":"Question","name":"How much time does it require from us?","acceptedAnswer":{"@type":"Answer","text":"Phase 1 requires 3–4 hours of interviews. Everything else is handled by us."}},{"@type":"Question","name":"What if the technology changes?","acceptedAnswer":{"@type":"Answer","text":"Our value lies in the company context, not the tool. When the technology changes, we migrate."}}]}
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+:root{
+  --color-black:#1A1A1A;
+  --color-gray:#E8E8E8;
+  --color-white:#FFFFFF;
+  --color-orange:#FF6B00;
+  --color-burn:radial-gradient(ellipse at 38% 35%,#FFD700 0%,#FFAA00 12%,#FF6B00 28%,#FF3300 48%,#8B0000 68%,#3A0000 85%,#1A0800 100%);
+  --ink:#1A1A1A;
+  --secondary:rgba(26,26,26,0.62);
+  --tertiary:rgba(26,26,26,0.38);
+  --border:rgba(0,0,0,0.09);
+  --bg:#FFFFFF;
+  --bg-alt:#F2F2F2;
+  --accent:var(--color-orange);
+  --f-display:'Exo 2',system-ui,sans-serif;
+  --f-body:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+
+body{
+  font-family:var(--f-body);
+  color:var(--ink);
+  background:var(--bg);
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:rgba(255,107,0,.15)}
+a{color:inherit;text-decoration:none}
+
+.skip{position:absolute;top:-60px;left:16px;background:var(--color-black);color:#fff;padding:8px 16px;font-size:13px;font-weight:600;z-index:9999;transition:top .2s}
+.skip:focus{top:0}
+
+[data-r]{opacity:0;transform:translateY(16px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
+[data-r].v{opacity:1;transform:none}
+[data-r]:nth-child(2){transition-delay:.08s}
+[data-r]:nth-child(3){transition-delay:.16s}
+[data-r]:nth-child(4){transition-delay:.24s}
+[data-r]:nth-child(5){transition-delay:.32s}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--color-black);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);transition:box-shadow .2s}
+nav.scrolled{box-shadow:0 1px 24px rgba(0,0,0,.4)}
+nav .w-wide{display:flex;justify-content:space-between;align-items:center;padding:14px 32px;max-width:1040px;margin:0 auto}
+.logo{font-family:var(--f-display);font-size:17px;font-weight:800;letter-spacing:0.02em;text-transform:uppercase;color:#fff}
+.logo .ai{color:var(--color-orange)}
+.logo .hy{color:rgba(255,255,255,.35);font-weight:700}
+.logo .ff{color:#fff}
+.n-links{display:flex;gap:32px;align-items:center}
+.n-links a{font-family:var(--f-body);font-size:13px;font-weight:500;color:rgba(255,255,255,.75);transition:color .15s}
+.n-links a:hover{color:#fff}
+.n-cta{font-family:var(--f-display) !important;font-weight:700 !important;font-size:11px !important;letter-spacing:.06em !important;text-transform:uppercase !important;background:var(--color-orange) !important;color:#fff !important;padding:9px 20px !important;border-radius:100px !important;transition:opacity .15s,transform .15s !important}
+.n-cta:hover{opacity:.88 !important;transform:translateY(-1px) !important}
+.n-tog{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.n-tog span{display:block;width:18px;height:1.5px;background:#fff;transition:all .3s}
+.n-tog.on span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
+.n-tog.on span:nth-child(2){opacity:0}
+.n-tog.on span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
+.n-mob{display:none;flex-direction:column;padding:12px 32px 24px;background:var(--color-black);border-top:1px solid rgba(255,255,255,.08)}
+.n-mob.open{display:flex}
+.n-mob a{padding:12px 0;font-size:15px;color:rgba(255,255,255,.75);border-bottom:1px solid rgba(255,255,255,.08)}
+.n-mob a:last-child{border:none;color:var(--color-orange);font-weight:600;padding-top:16px}
+.lang-sw{display:flex;gap:5px;align-items:center;margin-left:4px}
+.lang-sw a{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.38);transition:color .15s}
+.lang-sw a:hover{color:rgba(255,255,255,.75)}
+.lang-sw a.curr{color:rgba(255,255,255,.82)}
+.lang-sw span{color:rgba(255,255,255,.18);font-size:11px}
+.lang-sw-mob{padding:12px 0;display:flex;gap:8px;align-items:center;border-bottom:1px solid rgba(255,255,255,.08)}
+.lang-sw-mob a{font-family:var(--f-display);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.4);transition:color .15s}
+.lang-sw-mob a.curr{color:rgba(255,255,255,.85)}
+.lang-sw-mob span{color:rgba(255,255,255,.2)}
+
+.w{max-width:720px;margin:0 auto;padding:0 32px}
+.w-wide{max-width:1040px;margin:0 auto;padding:0 32px}
+.sec{
+  padding:100px 0;
+  background:var(--bg);
+}
+.sec+.sec{border-top:1px solid var(--border)}
+.sec-alt{
+  background:var(--bg-alt);
+}
+
+h1{font-family:var(--f-display);font-size:clamp(32px,4.5vw,52px);font-weight:900;line-height:1.05;letter-spacing:0.02em;text-transform:uppercase}
+h2{font-family:var(--f-display);font-size:28px;font-weight:800;line-height:1.15;letter-spacing:0.02em;text-transform:uppercase;color:var(--color-orange)}
+h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;letter-spacing:0.02em;text-transform:uppercase}
+.sub{font-family:var(--f-body);font-size:17px;color:var(--secondary);line-height:1.7;margin-top:16px;max-width:520px}
+
+.eyebrow{font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--secondary);margin-bottom:16px;display:block}
+.hero .eyebrow{color:rgba(255,255,255,.80)}
+.sec-label{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--color-orange);margin-bottom:12px;display:block}
+
+.sec h2::after,.sec-alt h2::after{content:'';display:block;width:36px;height:2px;background:var(--color-orange);margin-top:14px}
+
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:160px 0 100px;
+  overflow:hidden;
+}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(15,15,15,0.75) 0%,rgba(15,15,15,0.65) 60%,rgba(15,15,15,0.85) 100%);
+}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:40px 40px;
+}
+.hero-content{position:relative;z-index:2}
+.hero h1{margin-bottom:20px;color:#fff}
+.hero h1 em{font-style:normal;color:var(--color-orange)}
+.hero .sub{margin-bottom:36px;max-width:480px;color:rgba(255,255,255,.82);font-weight:400}
+.hero-actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:13px 28px;border:none;cursor:pointer;transition:all .2s;border-radius:100px;text-decoration:none}
+.btn-p{background:var(--color-orange);color:#fff}
+.btn-p:hover{opacity:.88;transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,80,0,.35)}
+.btn-s{background:rgba(255,255,255,.1);color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.2);font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:13px 24px;border-radius:100px}
+.btn-s:hover{background:rgba(255,255,255,.16);color:#fff}
+.btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none}
+
+.hero-stats{display:flex;gap:48px;padding-top:40px;border-top:1px solid rgba(255,255,255,.1)}
+.hero-stat-n{font-family:var(--f-display);font-size:36px;font-weight:900;color:#fff;letter-spacing:0.02em;text-transform:uppercase}
+.hero-stat-l{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.65);margin-top:4px}
+
+.pain-item{padding:28px 0 28px 0;border-bottom:1px solid var(--border);position:relative;transition:padding-left .2s}
+.pain-item:first-child{border-top:1px solid var(--border)}
+.pain-item p:first-child{font-weight:600;margin-bottom:4px;font-size:16px;line-height:1.4;color:var(--ink)}
+.pain-item p:last-child{color:var(--secondary);font-size:15px;font-family:var(--f-body)}
+
+.pain-cost{margin-top:40px;padding:28px 32px;background:rgba(255,107,0,.07);display:flex;gap:24px;align-items:baseline;border-left:3px solid var(--color-orange)}
+.pain-cost strong{font-family:var(--f-display);font-size:30px;font-weight:900;flex-shrink:0;letter-spacing:0.02em;color:var(--color-orange)}
+.pain-cost p{font-size:15px;color:var(--secondary);font-family:var(--f-body)}
+
+.pain-item{cursor:default;transition:border-color .15s}
+.pain-item:hover{border-left:3px solid var(--color-orange);padding-left:16px;margin-left:-19px;transition:padding .15s,margin .15s}
+
+.pain-grid{display:grid;grid-template-columns:1fr 380px;gap:72px;align-items:start}
+.pain-photo{position:sticky;top:96px}
+.pain-photo img{width:100%;height:560px;object-fit:cover;border-radius:2px;display:block;filter:grayscale(30%)}
+.pain-photo-cap{font-family:var(--f-body);font-size:12px;color:var(--tertiary);margin-top:10px;font-style:italic;line-height:1.5}
+
+.pain-infographic{padding:8px 0}
+.pi-eyebrow{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tertiary);margin-bottom:32px}
+.pi-group{margin-bottom:4px}
+.pi-lbl{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tertiary);margin-bottom:10px}
+.pi-bar{display:flex;height:64px;border-radius:2px;overflow:hidden;gap:3px}
+.pi-seg{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.pi-pct{font-family:var(--f-display);font-weight:900;letter-spacing:.02em;line-height:1}
+.pi-name{font-family:var(--f-display);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;line-height:1;opacity:.75}
+.pi-op-t{background:#FF6B00;color:#fff;flex:80}
+.pi-op-t .pi-pct{font-size:22px}
+.pi-st-t{background:#E8E8E8;color:#1A1A1A;flex:20}
+.pi-st-t .pi-pct{font-size:15px}
+.pi-op-f{background:#E8E8E8;color:#1A1A1A;flex:25}
+.pi-op-f .pi-pct{font-size:15px}
+.pi-st-f{background:#1A1A1A;color:#fff;flex:75}
+.pi-st-f .pi-pct{font-size:22px}
+.pi-arrow-row{display:flex;align-items:center;gap:12px;padding:20px 0 16px}
+.pi-arrow-row svg{width:20px;height:20px;stroke:var(--color-orange);stroke-width:2.5;fill:none;flex-shrink:0}
+.pi-arrow-txt{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-orange)}
+.pi-footnote{font-family:var(--f-body);font-size:11px;color:var(--tertiary);margin-top:22px;line-height:1.55;font-style:italic}
+
+.sol-example{margin-top:40px;padding:32px;background:rgba(0,0,0,.03);font-size:15px;line-height:1.7;border:1px solid var(--border);border-radius:8px}
+.sol-example p+p{margin-top:12px}
+.sol-example .q{color:var(--tertiary)}
+.sol-example .a{color:var(--ink)}
+.sol-example .a strong{font-weight:600}
+.sol-example .label{font-family:var(--f-display);font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--color-orange);margin-bottom:4px}
+
+.sol-what{margin-top:56px}
+.sol-what-item{padding:24px 0;border-bottom:1px solid var(--border);display:flex;gap:16px;align-items:flex-start;transition:opacity .2s}
+.sol-what-item:first-child{border-top:1px solid var(--border)}
+.sol-what-item:hover{opacity:.8}
+.sol-what-item h3{margin-bottom:6px}
+.sol-what-item p{font-size:15px;color:var(--secondary);font-family:var(--f-body)}
+
+.sol-icon{width:36px;height:36px;border-radius:8px;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.sol-icon svg{width:18px;height:18px;stroke:var(--color-orange);stroke-width:2;fill:none}
+
+.ui-mockup{margin-top:40px;border:1px solid var(--border);border-radius:8px;overflow:hidden;box-shadow:none}
+.ui-mkbar{background:rgba(0,0,0,.05);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
+.ui-dots{display:flex;gap:4px}
+.ui-dots span{width:9px;height:9px;border-radius:50%;background:rgba(0,0,0,.15)}
+.ui-mktitle{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tertiary);margin-left:6px}
+.ui-mkbody{padding:20px 20px 24px;background:rgba(0,0,0,.02);display:flex;flex-direction:column;gap:14px}
+.ui-msg{display:flex;gap:10px;align-items:flex-start}
+.ui-av{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-size:10px;font-weight:700;flex-shrink:0;margin-top:2px}
+.ui-av.u{background:rgba(255,107,0,.12);color:var(--color-orange)}
+.ui-av.a{background:var(--color-black);color:#fff}
+.ui-bub{font-family:var(--f-body);padding:10px 14px;border-radius:8px;font-size:13px;line-height:1.6;max-width:90%}
+.ui-bub.u{background:rgba(255,107,0,.08);color:var(--ink);border:1px solid rgba(255,107,0,.2)}
+.ui-bub.a{background:rgba(0,0,0,.05);color:var(--ink);border:1px solid var(--border)}
+.ui-bub strong{font-weight:600}
+
+.app-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:48px;border-radius:12px;overflow:hidden}
+.app-card{background:var(--color-black);display:flex;flex-direction:column}
+.app-card-img{position:relative;height:240px;overflow:hidden}
+.app-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.app-card:hover .app-card-img img{transform:scale(1.04)}
+.app-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,26,26,0.85) 0%,rgba(26,26,26,0.2) 100%)}
+.app-card-tag{position:absolute;top:16px;left:16px;font-family:var(--f-display);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--color-orange);padding:4px 12px;border-radius:100px}
+.app-card-body{padding:24px;flex:1}
+.app-card-body h3{color:#fff;margin-bottom:10px;font-size:15px;text-transform:uppercase;letter-spacing:.02em}
+.app-card-body p{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.65;font-family:var(--f-body)}
+.app-result{display:inline-block;margin-top:16px;font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--color-orange)}
+
+.scenario-meta{font-family:var(--f-body);font-size:14px;color:var(--secondary);margin-bottom:32px}
+.scenario-meta strong{color:var(--color-black);font-weight:600}
+.scenario-steps{margin-bottom:32px;position:relative}
+.scenario-steps::before{content:'';position:absolute;left:108px;top:24px;bottom:24px;width:1px;background:linear-gradient(to bottom,var(--color-orange),rgba(255,107,0,.08));pointer-events:none}
+.scenario-step{padding:16px 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:100px 1fr;gap:16px;position:relative}
+.scenario-step:first-child{border-top:1px solid var(--border)}
+.scenario-step .when{font-family:var(--f-display);font-size:10px;font-weight:700;color:var(--color-orange);padding-top:2px;letter-spacing:.1em;text-transform:uppercase}
+.scenario-step p{font-size:15px;color:var(--ink);font-family:var(--f-body)}
+.scenario-step strong{font-weight:600}
+.scenario-result{padding:20px 24px;background:rgba(255,107,0,.06);border:1px solid rgba(255,107,0,.2);border-radius:0 8px 8px 0;font-size:15px;line-height:1.6;border-left:3px solid var(--color-orange)}
+.scenario-result strong{font-weight:700;color:var(--color-orange)}
+.scenario-note{font-size:12px;color:var(--tertiary);margin-top:12px;font-family:var(--f-body)}
+
+.photo-band{
+  padding:120px 0;
+  background:var(--color-black);
+  position:relative;
+  overflow:hidden;
+}
+.pb-bg-img{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  opacity:0.15;
+}
+.photo-band::before{
+  content:'';
+  position:absolute;
+  top:50%;left:-10%;
+  transform:translateY(-50%);
+  width:70%;height:300%;
+  background:radial-gradient(ellipse at 30% 50%,rgba(255,107,0,.15) 0%,rgba(255,60,0,.05) 40%,transparent 65%);
+  pointer-events:none;
+}
+.photo-band .pb-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:28px 28px;
+  pointer-events:none;
+}
+.photo-band-inner{max-width:680px;padding:0 32px;position:relative;z-index:2}
+.photo-band-eyebrow{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--color-orange);margin-bottom:20px;display:block}
+.photo-band h2{color:#fff;font-size:clamp(26px,3vw,40px);line-height:1.1;letter-spacing:0.02em;font-weight:900;text-transform:uppercase}
+.photo-band h2::after{display:none}
+.photo-band-stats{display:flex;gap:56px;margin-top:52px;padding-top:40px;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
+.photo-band-stat-n{font-family:var(--f-display);font-size:38px;font-weight:900;color:#fff;letter-spacing:0.02em;line-height:1;text-transform:uppercase}
+.photo-band-stat-l{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.65);margin-top:6px;max-width:140px;line-height:1.4}
+
+.entry-offer{padding:24px 0;border-bottom:1px solid var(--border);margin-bottom:8px}
+.entry-offer h3{font-size:15px}
+.entry-offer h3 span{color:var(--color-orange)}
+.entry-offer p{font-size:14px;color:var(--secondary);margin-top:4px;font-family:var(--f-body)}
+
+.phase{padding:32px 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:140px 1fr auto;gap:32px;align-items:start}
+.phase-tag{font-family:var(--f-display);font-size:10px;font-weight:700;color:var(--color-orange);margin-bottom:4px;letter-spacing:.14em;text-transform:uppercase}
+.phase h3{font-size:18px;font-weight:800}
+.phase-dur{font-family:var(--f-body);font-size:13px;color:var(--tertiary);margin-top:2px}
+.phase ul{list-style:none;margin-top:4px}
+.phase li{font-family:var(--f-body);font-size:14px;color:var(--secondary);padding:4px 0}
+.phase-note{font-family:var(--f-body);font-size:12px;color:var(--tertiary);margin-top:8px;font-style:italic}
+.phase-price{text-align:right;white-space:nowrap}
+.phase-price strong{font-family:var(--f-display);font-size:20px;font-weight:900;display:block;color:var(--color-orange);letter-spacing:0.02em}
+.phase-price span{font-family:var(--f-body);font-size:12px;color:var(--tertiary)}
+
+.phase-num{width:32px;height:32px;border-radius:50%;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.25);color:var(--color-orange);font-family:var(--f-display);font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:8px}
+.entry-num{width:32px;height:32px;border-radius:100px;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.25);color:var(--color-orange);font-family:var(--f-display);font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:8px}
+
+.ind-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-top:32px;margin-bottom:32px;flex-wrap:wrap}
+.ind-tab{font-family:var(--f-display);padding:10px 20px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tertiary);background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer;transition:all .15s}
+.ind-tab:hover{color:var(--ink)}
+.ind-tab.on{color:var(--ink);border-bottom-color:var(--color-orange);font-weight:700}
+.ind-content{display:none;opacity:0;animation:fadeTab .25s ease forwards}
+.ind-content.on{display:block;animation:fadeTab .25s ease forwards}
+@keyframes fadeTab{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.ind-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.ind-left h3{font-size:18px;margin-bottom:16px}
+.ind-pains{list-style:none}
+.ind-pains li{font-family:var(--f-body);padding:8px 0;font-size:14px;color:var(--secondary);border-bottom:1px solid var(--border)}
+.ind-pains li:last-child{border:none}
+.ind-case{padding:20px 0;border-bottom:1px solid var(--border)}
+.ind-case:last-child{border:none}
+.ind-case h4{font-family:var(--f-display);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px;color:var(--ink)}
+.ind-case p{font-family:var(--f-body);font-size:13px;color:var(--secondary);margin-bottom:4px}
+.ind-case .res{font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--color-orange)}
+
+.ind-tab,.faq-q{cursor:pointer}
+
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;padding:20px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;font-family:var(--f-body);font-size:15px;font-weight:600;color:var(--ink)}
+.faq-q:hover{color:var(--color-orange)}
+.faq-q .ch{width:16px;height:16px;flex-shrink:0;transition:transform .25s}
+.faq-q .ch svg{width:10px;height:10px;stroke:var(--tertiary);stroke-width:2;fill:none}
+.faq-item.open .faq-q{color:var(--color-orange)}
+.faq-item.open .ch{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-a p{font-family:var(--f-body);padding:0 0 20px;font-size:15px;color:var(--secondary);line-height:1.7}
+.faq-a strong{color:var(--ink);font-weight:600}
+.faq-item.open .faq-a{max-height:300px}
+
+.cta-sec{
+  padding:100px 0;
+  text-align:center;
+  background:var(--color-black);
+  position:relative;
+  overflow:hidden;
+}
+.cta-sec::before{
+  content:'';
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:800px;height:500px;
+  background:radial-gradient(ellipse at center,rgba(255,107,0,.18) 0%,rgba(255,60,0,.06) 45%,transparent 70%);
+  pointer-events:none;
+}
+.cta-sec .cta-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:28px 28px;
+  pointer-events:none;
+}
+.cta-sec h2{margin-bottom:12px;color:#fff}
+.cta-sec h2::after{background:#fff;opacity:.25}
+.cta-sec .sub{margin:0 auto 8px;text-align:center;max-width:420px;color:rgba(255,255,255,.75)}
+.cta-sec .cta-note{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.65);margin-bottom:32px;font-style:italic}
+.cta-sec .btn-p{font-size:12px;padding:16px 40px;margin-bottom:16px;border-radius:100px}
+.cta-trust{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.cta-trust span{font-family:var(--f-body);font-size:12px;color:rgba(255,255,255,.70)}
+
+.next-steps{display:flex;gap:0;margin:36px 0 32px;justify-content:center}
+.next-step{display:flex;gap:12px;align-items:flex-start;flex:1;max-width:200px;position:relative}
+.next-step+.next-step::before{content:'';position:absolute;left:-1px;top:13px;width:100%;height:1px;background:rgba(255,255,255,.08);z-index:-1}
+.next-num{width:28px;height:28px;border-radius:50%;background:rgba(255,107,0,.15);border:1px solid rgba(255,107,0,.35);color:var(--color-orange);font-family:var(--f-display);font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.next-step strong{font-family:var(--f-display);font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;display:block;margin-bottom:3px}
+.next-step p{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.4);margin:0;line-height:1.5}
+
+.contact-form{margin:0 auto 24px;max-width:440px;text-align:left}
+.form-row{display:flex;gap:8px;margin-bottom:8px}
+.form-row input{flex:1;padding:13px 16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:#fff;font-size:15px;font-family:var(--f-body);outline:none;transition:border-color .15s,background .15s;min-width:0}
+.form-row input::placeholder{color:rgba(255,255,255,.28)}
+.form-row input:focus{border-color:rgba(255,107,0,.5);background:rgba(255,255,255,.09)}
+.contact-form .btn-p{width:100%;justify-content:center;font-size:12px;padding:16px 32px;border-radius:100px}
+.form-success{display:none;padding:20px;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.25);border-radius:8px;color:rgba(255,255,255,.8);font-size:15px;text-align:center;font-family:var(--f-body)}
+.form-success.show{display:block}
+
+footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-top{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-bottom:56px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08)}
+.f-logo{font-family:var(--f-display);font-size:22px;font-weight:900;letter-spacing:.02em;text-transform:uppercase;color:#fff;margin-bottom:12px}
+.f-logo span{color:var(--color-orange)}
+.f-tagline{font-family:var(--f-body);font-size:14px;color:rgba(255,255,255,.4);line-height:1.65;max-width:280px;margin-bottom:20px}
+.f-contact{display:flex;flex-direction:column;gap:4px}
+.f-contact a,.f-contact span{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.65)}
+.f-contact a:hover{color:var(--color-orange)}
+.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.fl-col{display:flex;flex-direction:column;gap:12px}
+.fl-col strong{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:4px}
+.fl-col a{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.65);transition:color .15s}
+.fl-col a:hover{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;font-family:var(--f-body);font-size:12px;color:rgba(255,255,255,.45)}
+
+.sticky-mob{position:fixed;bottom:0;left:0;right:0;background:var(--color-orange);padding:16px 24px;z-index:200;text-align:center;transform:translateY(100%);transition:transform .3s cubic-bezier(.22,1,.36,1);display:none}
+.sticky-mob.show{transform:none}
+.sticky-mob a{color:#fff;font-weight:700;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+@media(max-width:800px){.sticky-mob{display:block}}
+
+@media(max-width:800px){
+  .n-links{display:none}
+  .n-tog{display:flex;flex-direction:column}
+  .sec{padding:64px 0}
+  .hero{padding:120px 0 64px;min-height:auto}
+  h1{font-size:32px}
+  h2{font-size:22px}
+  .hero-stats{gap:24px}
+  .form-row{flex-direction:column}
+  .next-steps{gap:16px;flex-direction:column;align-items:center}
+  .next-step{max-width:100%;width:100%}
+  .next-step+.next-step::before{display:none}
+  .hero-stats{flex-direction:column;gap:16px}
+  .hero-stat-n{font-size:26px}
+  .ind-layout{grid-template-columns:1fr;gap:24px}
+  .phase{grid-template-columns:1fr;gap:12px}
+  .phase-price{text-align:left}
+  .pain-cost{flex-direction:column;gap:8px}
+  .scenario-step{grid-template-columns:1fr;gap:4px}
+  .w,.w-wide{padding:0 20px}
+  .pain-grid{grid-template-columns:1fr}
+  .pain-photo{display:none}
+  .pain-photo.pain-infographic{display:block}
+  .photo-band{padding:72px 0}
+  .photo-band-inner{padding:0 20px}
+  .photo-band h2{font-size:24px}
+  .photo-band-stats{gap:32px}
+  .app-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr;gap:40px}
+  .footer-links{grid-template-columns:1fr 1fr}
+  .footer-bottom{flex-direction:column;gap:8px}
+}
+
+@media(max-width:480px){
+  .w,.w-wide{padding:0 16px}
+  .sec{padding:48px 0}
+  .hero{padding:96px 0 48px}
+  h1{font-size:26px}
+  h2{font-size:20px}
+  .hero-stat-n{font-size:22px}
+  .hero-stats{gap:12px}
+  .phase{gap:8px}
+  .ind-tabs{gap:0}
+  .ind-tab{padding:8px 14px;font-size:10px}
+  .footer-links{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<nav>
+  <div class="w-wide">
+    <a href="/en/" class="logo"><span class="ai">AI</span><span class="hy">-</span><span class="ff">ffective</span></a>
+    <div class="n-links">
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#process">Process</a>
+      <a href="#industries">Industries</a>
+      <a href="#faq">FAQ</a>
+      <div class="lang-sw"><a href="/">DE</a><span>/</span><a href="/en/" class="curr">EN</a></div>
+      <a href="#cta" class="n-cta">Book a Call</a>
+    </div>
+    <button class="n-tog" aria-label="Menu" id="nT"><span></span><span></span><span></span></button>
+  </div>
+  <div class="n-mob" id="nM">
+    <a href="#problem">Problem</a>
+    <a href="#solution">Solution</a>
+    <a href="#process">Process</a>
+    <a href="#industries">Industries</a>
+    <a href="#faq">FAQ</a>
+    <div class="lang-sw-mob"><a href="/">DE</a><span>/</span><a href="/en/" class="curr">EN</a></div>
+    <a href="#cta">Book a Call</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80&auto=format&fit=crop" alt="" aria-hidden="true" loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="w hero-content">
+    <p class="eyebrow">AI-ffective · Managed AI Operations · Switzerland</p>
+    <h1>Your executives coordinate.<br>They should lead.</h1>
+    <p class="sub">Executives in Swiss companies spend too much time gathering information instead of making decisions. We build the system that delivers this overview automatically — every morning, without anyone having to ask.</p>
+    <div class="hero-actions">
+      <a href="#cta" class="btn btn-p">Book Free Analysis <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      <a href="#process" class="btn btn-s">See How It Works</a>
+    </div>
+    <div class="hero-stats" data-r>
+      <div><div class="hero-stat-n">40–70%</div><div class="hero-stat-l">less coordination overhead</div></div>
+      <div><div class="hero-stat-n">5 Min.</div><div class="hero-stat-l">instead of 2h for the daily overview</div></div>
+      <div><div class="hero-stat-n">&lt; 6 Wks.</div><div class="hero-stat-l">to first measurable value</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="sec" id="problem">
+  <div class="w-wide">
+    <div class="pain-grid">
+      <div>
+        <h2 data-r>The Problem Nobody Solves</h2>
+        <p class="sub" data-r>In Swiss companies with 50–500 employees, executives spend the majority of their time gathering information. Not making decisions.</p>
+
+        <div style="margin-top:40px">
+          <div class="pain-item" data-r>
+            <p>"I'm more of a coordinator than a CEO."</p>
+            <p>Compiling reports, status meetings, chasing down information. 60–80% of your week. The work they actually need you for gets no time.</p>
+          </div>
+          <div class="pain-item" data-r>
+            <p>"To know what's happening, I have to ask everyone individually."</p>
+            <p>No system proactively gives you an overview. So you ask — by email, by catching people in the corridor. That costs you and your team hours every day.</p>
+          </div>
+          <div class="pain-item" data-r>
+            <p>"My department heads are managing instead of leading."</p>
+            <p>Your middle management spends its time distributing information and reporting. The core work — developing teams, solving problems — falls by the wayside.</p>
+          </div>
+          <div class="pain-item" data-r>
+            <p>"We know AI could help. But where to start?"</p>
+            <p>ChatGPT gives generic answers. An internal project fails against the daily grind. Someone is missing to approach this systematically.</p>
+          </div>
+        </div>
+
+        <div class="pain-cost" data-r>
+          <strong>CHF 250k+/year</strong>
+          <p>When three executives spend 40% of their time on coordination instead of value creation, that's over a quarter million in tied capacity at typical salaries. <span style="font-size:12px;color:var(--tertiary)">(Calculation: 3 × CHF 180–220k annual salary × 40% coordination share)</span></p>
+        </div>
+      </div>
+
+      <div class="pain-photo pain-infographic" data-r>
+        <div class="pain-infographic">
+          <p class="pi-eyebrow">How executives spend their time</p>
+
+          <div class="pi-group">
+            <div class="pi-lbl">Today</div>
+            <div class="pi-bar">
+              <div class="pi-seg pi-op-t">
+                <span class="pi-pct">80%</span>
+                <span class="pi-name">operational</span>
+              </div>
+              <div class="pi-seg pi-st-t">
+                <span class="pi-pct">20%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pi-arrow-row">
+            <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            <span class="pi-arrow-txt">With AI-ffective</span>
+          </div>
+
+          <div class="pi-group">
+            <div class="pi-lbl">Possible</div>
+            <div class="pi-bar">
+              <div class="pi-seg pi-op-f">
+                <span class="pi-pct">25%</span>
+              </div>
+              <div class="pi-seg pi-st-f">
+                <span class="pi-pct">75%</span>
+                <span class="pi-name">strategic</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="pi-footnote">Based on typical results after 3 months of operation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="sec sec-alt" id="solution">
+  <div class="w">
+    <h2 data-r>Less Coordination. Better Decisions. Every Day.</h2>
+    <p class="sub" data-r>Generic AI tools don't know your company. We build the system that knows your strategy, processes and decision history — so your executives decide in minutes instead of searching for information for hours.</p>
+
+    <div class="ui-mockup" data-r>
+      <div class="ui-mkbar">
+        <div class="ui-dots"><span></span><span></span><span></span></div>
+        <span class="ui-mktitle">Company Memory — Monday, 08:12 AM</span>
+      </div>
+      <div class="ui-mkbody">
+        <div class="ui-msg">
+          <div class="ui-av u">CEO</div>
+          <div class="ui-bub u">How are we doing in Q1? What should I raise in the board meeting?</div>
+        </div>
+        <div class="ui-msg">
+          <div class="ui-av a">AI</div>
+          <div class="ui-bub a">Revenue 8% above plan, driven by Project Meridian.<br><br>Three points for the board: (1) Engineering has had two open positions for 6 weeks — <strong>capacity risk</strong>. (2) Client Rothschild approved Phase 2, CHF 180k. (3) Supplier Keller: 2-week delay on Project Alpine View.</div>
+        </div>
+        <div class="ui-msg">
+          <div class="ui-av u">CEO</div>
+          <div class="ui-bub u">Decision paper for additional recruiting budget.</div>
+        </div>
+        <div class="ui-msg">
+          <div class="ui-av a">AI</div>
+          <div class="ui-bub a">Created — in the format of your last board document. Contains current vacancies, cost comparison internal vs. external, and the <strong>impact on three ongoing projects</strong>. <span style="color:var(--color-orange);font-weight:600">→ Attachment: Recruiting-Budget-Q2.docx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sol-what" data-r>
+      <div class="sol-what-item">
+        <div class="sol-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/></svg></div>
+        <div>
+          <h3>Company Memory</h3>
+          <p>Never explain who your company is again. The AI knows your strategy, key people and ongoing projects — and delivers exactly the answers each person needs.</p>
+        </div>
+      </div>
+      <div class="sol-what-item">
+        <div class="sol-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <div>
+          <h3>Daily Executive Briefing</h3>
+          <p>Every morning: figures, deviations, open topics — prepared in the context of your company. Informed in 5 minutes instead of 2 hours.</p>
+        </div>
+      </div>
+      <div class="sol-what-item">
+        <div class="sol-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div>
+          <h3>We Operate. You Benefit.</h3>
+          <p>No internal IT project, no handover after which you're on your own. We operate the system — you keep the relief, even as your company changes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="sec" id="anwendungen">
+  <div class="w-wide">
+    <span class="sec-label" data-r>Use Cases</span>
+    <h2 data-r>AI in Daily Operations</h2>
+    <p class="sub" data-r>Concrete use cases — this is what intelligent operations management looks like in practice.</p>
+    <div class="app-grid">
+      <div class="app-card" data-r>
+        <div class="app-card-img">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80&auto=format&fit=crop" alt="Executive Briefing" loading="lazy">
+          <div class="app-card-overlay"></div>
+          <div class="app-card-tag">Management</div>
+        </div>
+        <div class="app-card-body">
+          <h3>Automated Executive Briefing</h3>
+          <p>Every morning at 8am: overview of project status, open decisions and critical KPIs — without a single request from you.</p>
+          <span class="app-result">→ 2h recovered daily</span>
+        </div>
+      </div>
+      <div class="app-card" data-r>
+        <div class="app-card-img">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80&auto=format&fit=crop" alt="Decision Papers" loading="lazy">
+          <div class="app-card-overlay"></div>
+          <div class="app-card-tag">Decisions</div>
+        </div>
+        <div class="app-card-body">
+          <h3>Structured Decision Papers</h3>
+          <p>Instead of hours of preparation: the system knows your decision history and delivers contextualised templates in minutes.</p>
+          <span class="app-result">→ 80% faster preparation</span>
+        </div>
+      </div>
+      <div class="app-card" data-r>
+        <div class="app-card-img">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80&auto=format&fit=crop" alt="Company Memory" loading="lazy">
+          <div class="app-card-overlay"></div>
+          <div class="app-card-tag">Operational Relief</div>
+        </div>
+        <div class="app-card-body">
+          <h3>Company Memory</h3>
+          <p>Processes, decisions, client knowledge — structured and always accessible. No knowledge is lost when employees move on.</p>
+          <span class="app-result">→ Knowledge stays in the company</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENARIO -->
+<section class="sec sec-alt">
+  <div class="w">
+    <h2 data-r>8 Hours Recovered — in 8 Weeks</h2>
+    <p class="sub" data-r>A typical progression: from the first analysis to cancelled meetings and noticeable time savings.</p>
+
+    <div class="scenario-meta" data-r>
+      <strong>Martin K.</strong>, CEO — Industrial company, 120 employees, German-speaking Switzerland
+    </div>
+
+    <div class="scenario-steps" data-r>
+      <div class="scenario-step"><div class="when">Weeks 1–3</div><p><strong>Discovery.</strong> 8 interviews with management, production, finance and HR. 12 concrete levers identified, 3 quick wins implemented immediately.</p></div>
+      <div class="scenario-step"><div class="when">Weeks 4–8</div><p><strong>Build.</strong> Company memory set up with strategy, organisation, projects and financial data. Connected to ERP and project management systems.</p></div>
+      <div class="scenario-step"><div class="when">From week 6</div><p><strong>First use.</strong> Daily CEO briefing live. Automated production report. Two status meetings per week cancelled.</p></div>
+      <div class="scenario-step"><div class="when">Ongoing</div><p><strong>Operations.</strong> Context updated with personnel changes and new projects. System expands to COO and department heads.</p></div>
+    </div>
+
+    <div class="scenario-result" data-r>
+      <p><strong>After 3 months:</strong> The CEO saves 8 hours per week. Production management has real-time overview. 3 meetings eliminated. Information flows without anyone having to ask.</p>
+    </div>
+    <p class="scenario-note" data-r>Illustrative scenario based on typical client situations.</p>
+
+    <div style="margin-top:48px;padding:32px;background:rgba(0,0,0,.04);border:1px solid var(--border);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;" data-r>
+      <div>
+        <p style="font-family:var(--f-display);font-size:15px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--ink);margin-bottom:4px;">Does this sound like your company?</p>
+        <p style="font-family:var(--f-body);font-size:14px;color:var(--secondary);">30 minutes, directly with one of our advisors. Open, without sales pressure.</p>
+      </div>
+      <a href="mailto:info@ai-ffective.com" class="btn btn-p" style="flex-shrink:0;">Book a Call <svg viewBox="0 0 16 16" style="width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO BAND -->
+<section class="photo-band" id="warum">
+  <img class="pb-bg-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&auto=format&fit=crop" alt="" aria-hidden="true" loading="lazy">
+  <div class="pb-grid"></div>
+  <div class="photo-band-inner">
+    <span class="photo-band-eyebrow">Managed AI Operations · Switzerland</span>
+    <h2>Information flows automatically.<br>Decisions happen faster.<br>Without anyone having to ask.</h2>
+    <div class="photo-band-stats">
+      <div>
+        <div class="photo-band-stat-n">40–70%</div>
+        <div class="photo-band-stat-l">less coordination overhead</div>
+      </div>
+      <div>
+        <div class="photo-band-stat-n">5 Min.</div>
+        <div class="photo-band-stat-l">instead of 2h for the daily overview</div>
+      </div>
+      <div>
+        <div class="photo-band-stat-n">&lt;6 Wks.</div>
+        <div class="photo-band-stat-l">to first measurable value</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHASES -->
+<section class="sec sec-alt" id="process">
+  <div class="w">
+    <h2 data-r>In 3 Phases to Tangible Relief</h2>
+    <p class="sub" data-r>From analysis to daily time savings — measurable week by week. Each phase delivers standalone value; you decide after each phase how to proceed.</p>
+
+    <div style="margin-top:40px">
+      <div class="entry-offer" data-r>
+        <div class="entry-num">★</div>
+        <h3>AI Tools Assessment — <span>CHF 999</span></h3>
+        <p>45-minute discovery call, then a report with 3–7 concrete tool recommendations for your company. Goal: 5 hours per week recovered — your effort under 2 hours.</p>
+      </div>
+
+      <div class="phase" data-r>
+        <div><div class="phase-num">1</div><div class="phase-tag">Phase 1</div><h3>Discovery</h3><div class="phase-dur">2–4 weeks</div></div>
+        <div>
+          <ul><li>6–12 interviews with key people</li><li>Audit of real workflows</li><li>Context architecture of your company knowledge</li><li>Prioritised action plan with ROI</li><li>2–3 quick wins, immediately actionable</li></ul>
+          <div class="phase-note">After 4 weeks you know exactly where AI gives you back 8+ hours per week. Your effort: 3–4 hours.</div>
+        </div>
+        <div class="phase-price"><strong>CHF 15–25k</strong><span>One-off</span></div>
+      </div>
+
+      <div class="phase" data-r>
+        <div><div class="phase-num">2</div><div class="phase-tag">Phase 2</div><h3>Build</h3><div class="phase-dur">4–8 weeks</div></div>
+        <div>
+          <ul><li>Building the company memory</li><li>AI system setup (cloud or local)</li><li>Data connection: ERP, CRM, Finance</li><li>Personal onboarding for executives</li><li>First briefings and automations live</li></ul>
+          <div class="phase-note">First automations and briefings are live before the phase ends.</div>
+        </div>
+        <div class="phase-price"><strong>CHF 20–45k</strong><span>One-off</span></div>
+      </div>
+
+      <div class="phase" data-r>
+        <div><div class="phase-num">3</div><div class="phase-tag">Phase 3</div><h3>Operations</h3><div class="phase-dur">Ongoing</div></div>
+        <div>
+          <ul><li>Context maintenance as things change</li><li>Quality monitoring and drift correction</li><li>Expansion to new areas and people</li><li>Quarterly strategic reviews</li></ul>
+          <div class="phase-note">No lock-in. All data and structures belong to you.</div>
+        </div>
+        <div class="phase-price"><strong>CHF 3–8k</strong><span>Per month</span></div>
+      </div>
+    </div>
+
+    <div style="margin-top:40px;padding:28px 32px;background:rgba(255,107,0,.06);border-radius:0 8px 8px 0;border:1px solid rgba(255,107,0,.2);border-left:3px solid var(--color-orange)" data-r>
+      <p style="font-family:var(--f-body);font-size:16px;line-height:1.6;color:var(--ink);margin-bottom:12px">"After 3 months our CEO saves 8 hours per week. Three status meetings eliminated. Information flows without anyone having to ask."</p>
+      <p style="font-family:var(--f-body);font-size:13px;color:var(--secondary)">Illustrative scenario — industrial company, 120 employees, German-speaking Switzerland</p>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="sec" id="industries">
+  <div class="w-wide">
+    <div style="max-width:720px" data-r>
+      <h2>Every Industry, Its Own Levers</h2>
+      <p class="sub">Coordination problems look different in manufacturing than in an accounting firm. Here we show where we specifically intervene.</p>
+    </div>
+    <div class="ind-tabs" data-r>
+      <button class="ind-tab on" data-t="prod">Manufacturing</button>
+      <button class="ind-tab" data-t="dienst">Services</button>
+      <button class="ind-tab" data-t="handel">Retail</button>
+      <button class="ind-tab" data-t="gesund">Healthcare</button>
+      <button class="ind-tab" data-t="bau">Construction</button>
+      <button class="ind-tab" data-t="finanz">Finance</button>
+    </div>
+    <div class="ind-content on" data-c="prod"><div class="ind-layout"><div class="ind-left"><h3>Manufacturing &amp; Industry</h3><ul class="ind-pains"><li>Production managers create reports instead of improving processes</li><li>Delivery delays reach management too late</li><li>Quality data exists, nobody analyses it</li><li>Shift handovers lose critical information</li></ul></div><div><div class="ind-case"><h4>Automated Production Report</h4><p>Every morning: KPIs, deviations, open issues from ERP and MES.</p><div class="res">45 min/day saved</div></div><div class="ind-case"><h4>Supplier Early Warning System</h4><p>Automatic monitoring of delivery dates. Alternatives shown immediately.</p><div class="res">60% lower impact from delays</div></div><div class="ind-case"><h4>Intelligent Shift Handover</h4><p>Structured logs automatically created from shift events.</p><div class="res">Handover time halved, error rate -35%</div></div></div></div></div>
+    <div class="ind-content" data-c="dienst"><div class="ind-layout"><div class="ind-left"><h3>Professional Services</h3><ul class="ind-pains"><li>Project progress exists only in people's heads, not in the system</li><li>Knowledge transfer when staff leave costs weeks</li><li>Every proposal written from scratch</li><li>Client history scattered across different tools</li></ul></div><div><div class="ind-case"><h4>Project Dashboards without Reporting</h4><p>Real-time status of all projects: budget, risks, milestones.</p><div class="res">3 status meetings/week eliminated</div></div><div class="ind-case"><h4>Proposals in 30 Min. Instead of 4 Hours</h4><p>Based on past projects and accumulated experience.</p><div class="res">Proposal time -87%</div></div><div class="ind-case"><h4>Client Memory</h4><p>Before every meeting: complete history, open topics. Automatically.</p><div class="res">More professional client presence</div></div></div></div></div>
+    <div class="ind-content" data-c="handel"><div class="ind-layout"><div class="ind-left"><h3>Retail &amp; Logistics</h3><ul class="ind-pains"><li>Sales figures at month end — too late for corrections</li><li>Inventory management: a manual triathlon</li><li>Seasonal trends identified too late</li><li>Supplier performance opaque</li></ul></div><div><div class="ind-case"><h4>Daily Sales Analysis</h4><p>Performance by branch, product group, and channel.</p><div class="res">Response time: weeks to hours</div></div><div class="ind-case"><h4>Intelligent Inventory Management</h4><p>Sell-through rates, seasonal patterns, proactive order suggestions.</p><div class="res">Overstock -25%, shortages -40%</div></div><div class="ind-case"><h4>Supplier Scorecard</h4><p>Delivery times, quality, and terms systematically tracked.</p><div class="res">15% better purchasing conditions</div></div></div></div></div>
+    <div class="ind-content" data-c="gesund"><div class="ind-layout"><div class="ind-left"><h3>Healthcare &amp; Social Services</h3><ul class="ind-pains"><li>Administration eats into patient time</li><li>Shift planning complex and error-prone</li><li>Compliance reports require hours of manual work</li><li>Cloud solutions excluded by data protection requirements</li></ul></div><div><div class="ind-case"><h4>Automated Compliance Reports</h4><p>Quality records from existing data, fully local processing.</p><div class="res">80% less reporting effort</div></div><div class="ind-case"><h4>Intelligent Shift Planning</h4><p>Competencies, availability, requirements. Automatic conflict warnings.</p><div class="res">Planning effort -60%</div></div><div class="ind-case"><h4>Sovereign AI System (Local)</h4><p>Open-source models. No cloud. Data protection compliant from day one.</p><div class="res">AI benefit with full data sovereignty</div></div></div></div></div>
+    <div class="ind-content" data-c="bau"><div class="ind-layout"><div class="ind-left"><h3>Construction &amp; Real Estate</h3><ul class="ind-pains"><li>Site managers juggle subcontractors, deadlines, and budgets</li><li>Meeting minutes disappear in inboxes</li><li>Post-calculation only available at project end</li><li>Experience not systematically leveraged</li></ul></div><div><div class="ind-case"><h4>Project Cockpit for Management</h4><p>All construction projects: budget, timeline, risks — automatically.</p><div class="res">Budget deviations spotted 4 weeks earlier</div></div><div class="ind-case"><h4>Minutes Management with Escalation</h4><p>Action items automatically extracted and assigned.</p><div class="res">90% fewer lost action items</div></div><div class="ind-case"><h4>Reuse Project Knowledge</h4><p>Calculations and experience used for new proposals.</p><div class="res">30% faster proposals</div></div></div></div></div>
+    <div class="ind-content" data-c="finanz"><div class="ind-layout"><div class="ind-left"><h3>Finance &amp; Professional Firms</h3><ul class="ind-pains"><li>Repetitive tasks tie up senior capacity</li><li>Client information distributed across different systems</li><li>Regulatory changes require manual research</li><li>Practice knowledge lost when staff leave</li></ul></div><div><div class="ind-case"><h4>Client Memory</h4><p>Complete context per client. Same knowledge level for everyone.</p><div class="res">Onboarding time -70%</div></div><div class="ind-case"><h4>Regulatory Early Warning System</h4><p>Legislation changes automatically monitored.</p><div class="res">Compliance risks -80%</div></div><div class="ind-case"><h4>Documents Pre-filled</h4><p>Annual accounts prepared on the basis of client data.</p><div class="res">40% less repetitive senior work</div></div></div></div></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-alt" id="faq">
+  <div class="w">
+    <h2 data-r>Frequently Asked Questions</h2>
+    <div style="margin-top:32px">
+      <div class="faq-item" data-r><button class="faq-q">"AI isn't mature enough for us yet"<span class="ch"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p>For briefings, reports and decision papers it is already capable today. The question is not whether, but when — and who builds the <strong>company context</strong> that creates the competitive advantage.</p></div></div>
+      <div class="faq-item" data-r><button class="faq-q">"We already have ChatGPT"<span class="ch"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p>ChatGPT doesn't know your company — your strategy, processes, people. It's like a brilliant intern on their first day: capable, but without context. AI-ffective builds the <strong>company understanding</strong> that makes the difference.</p></div></div>
+      <div class="faq-item" data-r><button class="faq-q">"Our data is too sensitive"<span class="ch"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p>That's exactly why we offer two tracks: <strong>cloud</strong> (maximum quality) or <strong>fully local</strong> (no data leaves your premises). DSG and GDPR compliant in both variants.</p></div></div>
+      <div class="faq-item" data-r><button class="faq-q">"That's a significant investment"<span class="ch"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p>Phase 1 costs less than one month's salary of an executive. If that executive regains 40% coordination time, the investment pays back in weeks. Or start with the <strong>assessment for CHF 999</strong>.</p></div></div>
+      <div class="faq-item" data-r><button class="faq-q">"We don't have time for this"<span class="ch"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p>That's exactly the problem we solve. Phase 1 requires <strong>3–4 hours</strong> of your time. Everything else is handled by us.</p></div></div>
+      <div class="faq-item" data-r><button class="faq-q">"What if the technology changes?"<span class="ch"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p>It will change. Our value lies in the <strong>structured context</strong>, not the tool. When the tool changes, we migrate.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec" id="cta">
+  <div class="cta-grid"></div>
+  <div class="w" style="position:relative">
+    <h2 data-r>What Would You Do With 8 Extra Hours Per Week?</h2>
+    <p class="sub" data-r>30 minutes is enough to know whether this works for your company.</p>
+
+    <div class="next-steps" data-r>
+      <div class="next-step">
+        <div class="next-num">1</div>
+        <div><strong>Call</strong><p>30 min — you describe your situation</p></div>
+      </div>
+      <div class="next-step">
+        <div class="next-num">2</div>
+        <div><strong>Analysis</strong><p>We show 3 concrete levers for your company</p></div>
+      </div>
+      <div class="next-step">
+        <div class="next-num">3</div>
+        <div><strong>Decision</strong><p>You decide if and how to proceed</p></div>
+      </div>
+    </div>
+
+    <form class="contact-form" name="contact-en" method="POST" data-netlify="true" data-r id="contactForm">
+      <input type="hidden" name="form-name" value="contact-en">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required autocomplete="name">
+        <input type="email" name="email" placeholder="Your Email" required autocomplete="email">
+      </div>
+      <div class="form-row">
+        <input type="text" name="company" placeholder="Your Company" required>
+      </div>
+      <button type="submit" class="btn btn-p">Request a Call <svg viewBox="0 0 16 16" style="width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+    </form>
+    <div class="form-success" id="formSuccess">Thank you — we'll get back to you within 24 hours with a meeting proposal.</div>
+    <p class="cta-note" data-r>You speak directly with an advisor — no sales team, no pressure.</p>
+    <div class="cta-trust" data-r>
+      <span>&#10003; Swiss Company</span>
+      <span>&#10003; Full Data Sovereignty</span>
+      <span>&#10003; No Lock-in</span>
+      <span>&#10003; No Sales Funnel</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="w-wide">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">AI-<span>ffective</span></div>
+        <p class="f-tagline">Making operations intelligent. So leadership can be leadership again.</p>
+        <div class="f-contact">
+          <a href="mailto:info@ai-ffective.com">info@ai-ffective.com</a>
+          <span>Zürich, Switzerland</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col">
+          <strong>Offering</strong>
+          <a href="#problem">The Problem</a>
+          <a href="#solution">Our Solution</a>
+          <a href="#process">Process</a>
+          <a href="#industries">Industries</a>
+        </div>
+        <div class="fl-col">
+          <strong>Company</strong>
+          <a href="#faq">FAQ</a>
+          <a href="#cta">Contact</a>
+          <a href="/impressum.html">Imprint</a>
+          <a href="/datenschutz.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&#169; 2026 AI-ffective — Managed AI Operations</span>
+      <span>Zürich, Switzerland &middot; DSG &amp; GDPR compliant</span>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<div class="sticky-mob" id="stickyCta">
+  <a href="#cta">Reserve 30 minutes →</a>
+</div>
+
+<script>
+const o=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('v')})},{threshold:.05,rootMargin:'0px 0px 0px 0px'});
+document.querySelectorAll('[data-r]').forEach(e=>o.observe(e));
+setTimeout(()=>{document.querySelectorAll('[data-r]').forEach(e=>e.classList.add('v'))},1200);
+
+const nav=document.querySelector('nav');
+const stickyCta=document.getElementById('stickyCta');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',scrollY>32);
+  if(stickyCta)stickyCta.classList.toggle('show',scrollY>500);
+},{passive:true});
+
+const form=document.getElementById('contactForm');
+const formSuccess=document.getElementById('formSuccess');
+if(form){form.addEventListener('submit',async(e)=>{
+  e.preventDefault();
+  const btn=form.querySelector('button[type=submit]');
+  btn.textContent='Sending…';btn.disabled=true;
+  try{
+    const data=new FormData(form);
+    await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(data).toString()});
+    form.style.display='none';
+    formSuccess.classList.add('show');
+  }catch(err){
+    btn.textContent='Request a Call →';btn.disabled=false;
+  }
+})}
+const t=document.getElementById('nT'),m=document.getElementById('nM');
+t.addEventListener('click',()=>{m.classList.toggle('open');t.classList.toggle('on')});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');t.classList.remove('on')}));
+document.querySelectorAll('.faq-q').forEach(b=>{b.addEventListener('click',()=>{const i=b.closest('.faq-item'),w=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));if(!w)i.classList.add('open')})});
+document.querySelectorAll('.ind-tab').forEach(t=>{t.addEventListener('click',()=>{document.querySelectorAll('.ind-tab').forEach(x=>x.classList.remove('on'));document.querySelectorAll('.ind-content').forEach(x=>x.classList.remove('on'));t.classList.add('on');document.querySelector(`[data-c="${t.dataset.t}"]`).classList.add('on')})});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id==='#')return;const el=document.querySelector(id);if(el){e.preventDefault();scrollTo({top:el.getBoundingClientRect().top+scrollY-56,behavior:'smooth'})}})});
+</script>
+</body>
+</html>
