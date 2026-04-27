@@ -19,8 +19,9 @@
 <meta name="twitter:title" content="AI-ffective — KI-Betriebsführung für Schweizer Unternehmen">
 <meta name="twitter:description" content="KI-Betriebsschicht für Schweizer KMU. 40–70% weniger Koordinationsaufwand. Durchleuchtung ab CHF 15'000.">
 <meta name="twitter:image" content="https://ai-ffective.netlify.app/og-image.png">
-<link rel="alternate" hreflang="de-CH" href="https://ai-ffective.netlify.app">
-<link rel="alternate" hreflang="x-default" href="https://ai-ffective.netlify.app">
+<link rel="alternate" hreflang="de-CH" href="https://ai-ffective.netlify.app/">
+<link rel="alternate" hreflang="en" href="https://ai-ffective.netlify.app/en/">
+<link rel="alternate" hreflang="x-default" href="https://ai-ffective.netlify.app/">
 <link rel="canonical" href="https://ai-ffective.netlify.app">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -102,6 +103,15 @@ nav .w-wide{display:flex;justify-content:space-between;align-items:center;paddin
 .n-mob.open{display:flex}
 .n-mob a{padding:12px 0;font-size:15px;color:rgba(255,255,255,.75);border-bottom:1px solid rgba(255,255,255,.08)}
 .n-mob a:last-child{border:none;color:var(--color-orange);font-weight:600;padding-top:16px}
+.lang-sw{display:flex;gap:5px;align-items:center;margin-left:4px}
+.lang-sw a{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.38);transition:color .15s}
+.lang-sw a:hover{color:rgba(255,255,255,.75)}
+.lang-sw a.curr{color:rgba(255,255,255,.82)}
+.lang-sw span{color:rgba(255,255,255,.18);font-size:11px}
+.lang-sw-mob{padding:12px 0;display:flex;gap:8px;align-items:center;border-bottom:1px solid rgba(255,255,255,.08)}
+.lang-sw-mob a{font-family:var(--f-display);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.4);transition:color .15s}
+.lang-sw-mob a.curr{color:rgba(255,255,255,.85)}
+.lang-sw-mob span{color:rgba(255,255,255,.2)}
 
 /* ═══════════════════════════════════
    Layout helpers
@@ -528,6 +538,7 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
       <a href="#zusammenarbeit">Phasen</a>
       <a href="#branchen">Branchen</a>
       <a href="#faq">FAQ</a>
+      <div class="lang-sw"><a href="/" class="curr">DE</a><span>/</span><a href="/en/">EN</a></div>
       <a href="#cta" class="n-cta">Gespräch vereinbaren</a>
     </div>
     <button class="n-tog" aria-label="Menü" id="nT"><span></span><span></span><span></span></button>
@@ -538,6 +549,7 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
     <a href="#zusammenarbeit">Phasen</a>
     <a href="#branchen">Branchen</a>
     <a href="#faq">FAQ</a>
+    <div class="lang-sw-mob"><a href="/" class="curr">DE</a><span>/</span><a href="/en/">EN</a></div>
     <a href="#cta">Gespräch vereinbaren</a>
   </div>
 </nav>
