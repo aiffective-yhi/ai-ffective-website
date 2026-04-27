@@ -44,12 +44,12 @@ html{scroll-behavior:smooth}
   --color-white:#FFFFFF;
   --color-orange:#FF6B00;
   --color-burn:radial-gradient(ellipse at 38% 35%,#FFD700 0%,#FFAA00 12%,#FF6B00 28%,#FF3300 48%,#8B0000 68%,#3A0000 85%,#1A0800 100%);
-  --ink:#F0F0F5;
-  --secondary:rgba(240,240,245,0.65);
-  --tertiary:rgba(240,240,245,0.40);
-  --border:rgba(255,255,255,0.10);
-  --bg:#0F0F18;
-  --bg-alt:rgba(255,255,255,0.03);
+  --ink:#1A1A1A;
+  --secondary:rgba(26,26,26,0.62);
+  --tertiary:rgba(26,26,26,0.38);
+  --border:rgba(0,0,0,0.09);
+  --bg:#FFFFFF;
+  --bg-alt:#F2F2F2;
   --accent:var(--color-orange);
   --f-display:'Exo 2',system-ui,sans-serif;
   --f-body:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
@@ -126,7 +126,8 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 .sub{font-family:var(--f-body);font-size:17px;color:var(--secondary);line-height:1.7;margin-top:16px;max-width:520px}
 
 /* Section eyebrow labels */
-.eyebrow{font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.80);margin-bottom:16px;display:block}
+.eyebrow{font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--secondary);margin-bottom:16px;display:block}
+.hero .eyebrow{color:rgba(255,255,255,.80)}
 .sec-label{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--color-orange);margin-bottom:12px;display:block}
 
 /* Orange underline for h2 on light sections */
@@ -198,7 +199,7 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 /* ═══════════════════════════════════
    SOLUTION
    ═══════════════════════════════════ */
-.sol-example{margin-top:40px;padding:32px;background:rgba(255,255,255,.04);font-size:15px;line-height:1.7;border:1px solid var(--border);border-radius:8px}
+.sol-example{margin-top:40px;padding:32px;background:rgba(0,0,0,.03);font-size:15px;line-height:1.7;border:1px solid var(--border);border-radius:8px}
 .sol-example p+p{margin-top:12px}
 .sol-example .q{color:var(--tertiary)}
 .sol-example .a{color:var(--ink)}
@@ -218,18 +219,18 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 
 /* Stylised UI mockup in solution section */
 .ui-mockup{margin-top:40px;border:1px solid var(--border);border-radius:8px;overflow:hidden;box-shadow:none}
-.ui-mkbar{background:rgba(255,255,255,.05);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
+.ui-mkbar{background:rgba(0,0,0,.05);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
 .ui-dots{display:flex;gap:4px}
-.ui-dots span{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.2)}
+.ui-dots span{width:9px;height:9px;border-radius:50%;background:rgba(0,0,0,.15)}
 .ui-mktitle{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tertiary);margin-left:6px}
-.ui-mkbody{padding:20px 20px 24px;background:rgba(255,255,255,.02);display:flex;flex-direction:column;gap:14px}
+.ui-mkbody{padding:20px 20px 24px;background:rgba(0,0,0,.02);display:flex;flex-direction:column;gap:14px}
 .ui-msg{display:flex;gap:10px;align-items:flex-start}
 .ui-av{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-size:10px;font-weight:700;flex-shrink:0;margin-top:2px}
 .ui-av.u{background:rgba(255,107,0,.12);color:var(--color-orange)}
 .ui-av.a{background:var(--color-black);color:#fff}
 .ui-bub{font-family:var(--f-body);padding:10px 14px;border-radius:8px;font-size:13px;line-height:1.6;max-width:90%}
 .ui-bub.u{background:rgba(255,107,0,.08);color:var(--ink);border:1px solid rgba(255,107,0,.2)}
-.ui-bub.a{background:rgba(255,255,255,.07);color:var(--ink);border:1px solid var(--border)}
+.ui-bub.a{background:rgba(0,0,0,.05);color:var(--ink);border:1px solid var(--border)}
 .ui-bub strong{font-weight:600}
 
 /* ═══════════════════════════════════
@@ -711,7 +712,7 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
     </div>
     <p class="scenario-note" data-r>Illustratives Szenario basierend auf typischen Kundensituationen.</p>
 
-    <div style="margin-top:48px;padding:32px;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;" data-r>
+    <div style="margin-top:48px;padding:32px;background:rgba(0,0,0,.04);border:1px solid var(--border);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;" data-r>
       <div>
         <p style="font-family:var(--f-display);font-size:15px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--ink);margin-bottom:4px;">Klingt das nach Ihrem Unternehmen?</p>
         <p style="font-family:var(--f-body);font-size:14px;color:var(--secondary);">30 Minuten, direkt mit einem unserer Berater. Offen, ohne Verkaufsdruck.</p>
