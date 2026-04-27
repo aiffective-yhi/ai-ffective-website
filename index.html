@@ -197,6 +197,30 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 .pain-photo-cap{font-family:var(--f-body);font-size:12px;color:var(--tertiary);margin-top:10px;font-style:italic;line-height:1.5}
 
 /* ═══════════════════════════════════
+   PAIN INFOGRAPHIC
+   ═══════════════════════════════════ */
+.pain-infographic{padding:8px 0}
+.pi-eyebrow{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tertiary);margin-bottom:32px}
+.pi-group{margin-bottom:4px}
+.pi-lbl{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tertiary);margin-bottom:10px}
+.pi-bar{display:flex;height:64px;border-radius:2px;overflow:hidden;gap:3px}
+.pi-seg{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.pi-pct{font-family:var(--f-display);font-weight:900;letter-spacing:.02em;line-height:1}
+.pi-name{font-family:var(--f-display);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;line-height:1;opacity:.75}
+.pi-op-t{background:#FF6B00;color:#fff;flex:80}
+.pi-op-t .pi-pct{font-size:22px}
+.pi-st-t{background:#E8E8E8;color:#1A1A1A;flex:20}
+.pi-st-t .pi-pct{font-size:15px}
+.pi-op-f{background:#E8E8E8;color:#1A1A1A;flex:25}
+.pi-op-f .pi-pct{font-size:15px}
+.pi-st-f{background:#1A1A1A;color:#fff;flex:75}
+.pi-st-f .pi-pct{font-size:22px}
+.pi-arrow-row{display:flex;align-items:center;gap:12px;padding:20px 0 16px}
+.pi-arrow-row svg{width:20px;height:20px;stroke:var(--color-orange);stroke-width:2.5;fill:none;flex-shrink:0}
+.pi-arrow-txt{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-orange)}
+.pi-footnote{font-family:var(--f-body);font-size:11px;color:var(--tertiary);margin-top:22px;line-height:1.55;font-style:italic}
+
+/* ═══════════════════════════════════
    SOLUTION
    ═══════════════════════════════════ */
 .sol-example{margin-top:40px;padding:32px;background:rgba(0,0,0,.03);font-size:15px;line-height:1.7;border:1px solid var(--border);border-radius:8px}
@@ -465,6 +489,7 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
   .w,.w-wide{padding:0 20px}
   .pain-grid{grid-template-columns:1fr}
   .pain-photo{display:none}
+  .pain-photo.pain-infographic{display:block}
   .photo-band{padding:72px 0}
   .photo-band-inner{padding:0 20px}
   .photo-band h2{font-size:24px}
@@ -534,9 +559,6 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
       <a href="#cta" class="btn btn-p">Kostenlose Analyse buchen <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       <a href="#zusammenarbeit" class="btn btn-s">Ablauf ansehen</a>
     </div>
-    <p style="font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.72);margin-top:4px;margin-bottom:4px">Oder starten Sie mit dem <a href="#zusammenarbeit" style="color:var(--color-orange);text-decoration:underline;text-underline-offset:3px">AI Assessment für CHF 999</a> — Ergebnis in einer Woche.</p>
-    <p class="hero-note">Sie beschreiben Ihre Lage — wir zeigen drei konkrete Hebel. Kein Pitch.</p>
-    <p class="hero-proof">AI-ffective — Managed AI Operations für Schweizer KMU</p>
     <div class="hero-stats" data-r>
       <div><div class="hero-stat-n">40–70%</div><div class="hero-stat-l">weniger Koordinationsaufwand</div></div>
       <div><div class="hero-stat-n">5 Min.</div><div class="hero-stat-l">statt 2h für den Tagesüberblick</div></div>
@@ -578,9 +600,43 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
         </div>
       </div>
 
-      <div class="pain-photo" data-r>
-        <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&q=80&auto=format&fit=crop&crop=top" alt="Führungskraft im Gespräch — Informationsfluss im Unternehmen" loading="lazy">
-        <p class="pain-photo-cap">Koordination statt Führung: Führungskräfte verbringen bis zu 80% ihrer Zeit damit, Informationen zu sammeln statt Entscheidungen zu treffen.</p>
+      <div class="pain-photo pain-infographic" data-r>
+        <div class="pain-infographic">
+          <p class="pi-eyebrow">Wie Führungskräfte ihre Zeit verbringen</p>
+
+          <div class="pi-group">
+            <div class="pi-lbl">Heute</div>
+            <div class="pi-bar">
+              <div class="pi-seg pi-op-t">
+                <span class="pi-pct">80%</span>
+                <span class="pi-name">operativ</span>
+              </div>
+              <div class="pi-seg pi-st-t">
+                <span class="pi-pct">20%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pi-arrow-row">
+            <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            <span class="pi-arrow-txt">Mit AI-ffective</span>
+          </div>
+
+          <div class="pi-group">
+            <div class="pi-lbl">Möglich</div>
+            <div class="pi-bar">
+              <div class="pi-seg pi-op-f">
+                <span class="pi-pct">25%</span>
+              </div>
+              <div class="pi-seg pi-st-f">
+                <span class="pi-pct">75%</span>
+                <span class="pi-name">strategisch</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="pi-footnote">Basierend auf typischen Ergebnissen nach 3 Monaten Betrieb.</p>
+        </div>
       </div>
     </div>
   </div>
