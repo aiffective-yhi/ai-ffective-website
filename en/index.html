@@ -89,7 +89,7 @@ nav .w-wide{display:flex;justify-content:space-between;align-items:center;paddin
 .n-links a:hover{color:#fff}
 .n-cta{font-family:var(--f-display) !important;font-weight:700 !important;font-size:11px !important;letter-spacing:.06em !important;text-transform:uppercase !important;background:var(--color-orange) !important;color:#fff !important;padding:9px 20px !important;border-radius:100px !important;transition:opacity .15s,transform .15s !important}
 .n-cta:hover{opacity:.88 !important;transform:translateY(-1px) !important}
-.n-tog{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.n-tog{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
 .n-tog span{display:block;width:18px;height:1.5px;background:#fff;transition:all .3s}
 .n-tog.on span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
 .n-tog.on span:nth-child(2){opacity:0}
@@ -183,13 +183,13 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 .pain-photo-cap{font-family:var(--f-body);font-size:12px;color:var(--tertiary);margin-top:10px;font-style:italic;line-height:1.5}
 
 .pain-infographic{padding:8px 0}
-.pi-eyebrow{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tertiary);margin-bottom:32px}
+.pi-eyebrow{font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tertiary);margin-bottom:32px}
 .pi-group{margin-bottom:4px}
-.pi-lbl{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tertiary);margin-bottom:10px}
+.pi-lbl{font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tertiary);margin-bottom:10px}
 .pi-bar{display:flex;height:64px;border-radius:2px;overflow:hidden;gap:3px}
 .pi-seg{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
 .pi-pct{font-family:var(--f-display);font-weight:900;letter-spacing:.02em;line-height:1}
-.pi-name{font-family:var(--f-display);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;line-height:1;opacity:.75}
+.pi-name{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;line-height:1;opacity:.75}
 .pi-op-t{background:#1A1A1A;color:#fff;flex:80}
 .pi-op-t .pi-pct{font-size:22px}
 .pi-st-t{background:#E8E8E8;color:#1A1A1A;flex:20}
@@ -200,8 +200,8 @@ h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;l
 .pi-st-f .pi-pct{font-size:22px}
 .pi-arrow-row{display:flex;align-items:center;gap:12px;padding:20px 0 16px}
 .pi-arrow-row svg{width:20px;height:20px;stroke:var(--color-orange);stroke-width:2.5;fill:none;flex-shrink:0}
-.pi-arrow-txt{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-orange)}
-.pi-footnote{font-family:var(--f-body);font-size:11px;color:var(--tertiary);margin-top:22px;line-height:1.55;font-style:italic}
+.pi-arrow-txt{font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-orange)}
+.pi-footnote{font-family:var(--f-body);font-size:12px;color:var(--tertiary);margin-top:22px;line-height:1.55;font-style:italic}
 
 .sol-example{margin-top:40px;padding:32px;background:rgba(0,0,0,.03);font-size:15px;line-height:1.7;border:1px solid var(--border);border-radius:8px}
 .sol-example p+p{margin-top:12px}
@@ -456,7 +456,7 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
   .hero-stats{gap:12px}
   .phase{gap:8px}
   .ind-tabs{gap:0}
-  .ind-tab{padding:8px 14px;font-size:10px}
+  .ind-tab{padding:8px 14px;font-size:10px;min-height:44px;display:flex;align-items:center;justify-content:center}
   .footer-links{grid-template-columns:1fr}
 }
 </style>
