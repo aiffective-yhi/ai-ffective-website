@@ -1,7 +1,7 @@
-# ODAI — Managed AI Operations für Schweizer Unternehmen
+# AI-ffective — Managed AI Operations für Schweizer Unternehmen
 
-## Über ODAI
-ODAI ist ein Managed AI Operations Unternehmen mit Sitz in Baar, Kanton Zug, Schweiz. Wir bauen, betreiben und entwickeln die KI-Betriebsschicht für Schweizer Unternehmen mit 50–500 Mitarbeitenden.
+## Über AI-ffective
+AI-ffective ist ein Managed AI Operations Unternehmen mit Sitz in Baar, Kanton Zug, Schweiz. Wir bauen, betreiben und entwickeln die KI-Betriebsschicht für Schweizer Unternehmen mit 50–500 Mitarbeitenden.
 
 **Gründer:** Yannick Hirt, Baar ZG
 **Kontakt:** info@odcus.com
@@ -28,7 +28,7 @@ Wir bauen einen strukturierten KI-Wissensspeicher (Unternehmenskontext) für Sch
 Schweizer Unternehmen mit 50–500 Mitarbeitenden. Branchen: Produktion, Dienstleistung, Handel, Gesundheit, Bau, Finanzen. Entscheider: Geschäftsführer, C-Level, Bereichsleiter (45–65 Jahre).
 
 ## Differenzierung
-Im Gegensatz zu ChatGPT oder generischen KI-Tools kennt das ODAI-System das Unternehmen selbst — Strategie, Prozesse, Kennzahlen, Entscheidungshistorie. Das ist der "Unternehmenskontext", der den Unterschied macht.
+Im Gegensatz zu ChatGPT oder generischen KI-Tools kennt das AI-ffective-System das Unternehmen selbst — Strategie, Prozesse, Kennzahlen, Entscheidungshistorie. Das ist der "Unternehmenskontext", der den Unterschied macht.
 
 ## Compliance
 Zwei Datensouveränitäts-Tracks:
@@ -40,7 +40,7 @@ Beide Tracks sind DSG- (Schweizer Datenschutzgesetz) und DSGVO-konform.
 ## Häufige Fragen
 **Ist KI reif genug für Schweizer KMU?** Für Briefings, Berichte und Entscheidungsvorlagen: ja. Wer heute anfängt, baut den Kontext auf, der den Vorsprung bringt.
 
-**Was unterscheidet ODAI von ChatGPT?** ChatGPT kennt Ihr Unternehmen nicht. ODAI baut einen strukturierten Wissensspeicher mit Ihrer Strategie, Organisation und Entscheidungshistorie.
+**Was unterscheidet AI-ffective von ChatGPT?** ChatGPT kennt Ihr Unternehmen nicht. AI-ffective baut einen strukturierten Wissensspeicher mit Ihrer Strategie, Organisation und Entscheidungshistorie.
 
 **Was kostet der Einstieg?** AI Tools Assessment: CHF 999. Phase 1 (Durchleuchtung): CHF 15'000–25'000. Dies entspricht weniger als einem Monatsgehalt einer Führungskraft.
 
