@@ -5,7 +5,8 @@ AI-ffective ist ein Managed AI Operations Unternehmen mit Sitz in Baar, Kanton Z
 
 **Gründer:** Yannick Hirt, Baar ZG
 **Kontakt:** info@odcus.com
-**Website:** https://odai-landing.netlify.app
+**Website:** https://ai-ffective.netlify.app
+**Blog:** https://ai-ffective.netlify.app/blog/
 **Sprache:** Deutsch (Schweiz)
 
 ## Was wir tun
@@ -47,3 +48,6 @@ Beide Tracks sind DSG- (Schweizer Datenschutzgesetz) und DSGVO-konform.
 **Wie viel Zeit benötigen wir?** Phase 1 erfordert 3–4 Stunden Gespräche seitens des Kunden. Den Rest übernehmen wir.
 
 **Was wenn sich die Technologie ändert?** Unser Wert liegt im Unternehmenskontext, nicht im Tool. Bei Technologiewechseln migrieren wir.
+
+## Blog
+- Die neue Betriebsschicht: Wie KI die Architektur deines Unternehmens verändert — https://ai-ffective.netlify.app/blog/ki-betriebsschicht/

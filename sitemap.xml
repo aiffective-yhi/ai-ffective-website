@@ -2,21 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://odai-landing.netlify.app/</loc>
-    <xhtml:link rel="alternate" hreflang="de-CH" href="https://odai-landing.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://odai-landing.netlify.app/"/>
-    <lastmod>2026-04-08</lastmod>
+    <loc>https://ai-ffective.netlify.app/</loc>
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://ai-ffective.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-ffective.netlify.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-ffective.netlify.app/"/>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://odai-landing.netlify.app/datenschutz.html</loc>
+    <loc>https://ai-ffective.netlify.app/en/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai-ffective.netlify.app/blog/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ai-ffective.netlify.app/blog/ki-betriebsschicht/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ai-ffective.netlify.app/datenschutz.html</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://odai-landing.netlify.app/impressum.html</loc>
+    <loc>https://ai-ffective.netlify.app/impressum.html</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
