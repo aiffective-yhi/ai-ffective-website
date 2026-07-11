@@ -412,6 +412,14 @@ h2[data-r]:not(.v)::after{width:0}
 .fit-card li:last-child{border:none}
 .fit-card li::before{content:'';position:absolute;left:0;top:19px;width:10px;height:2px;background:var(--color-orange)}
 .fit-card.no li::before{background:var(--tertiary)}
+.persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.persona-card{display:flex;flex-direction:column;background:var(--color-white);border:1px solid var(--border);border-left:3px solid var(--color-orange);border-radius:8px;padding:32px 28px}
+.persona-role{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--tertiary);margin-bottom:16px}
+.persona-card blockquote{margin:0 0 14px;font-family:var(--f-body);font-size:18px;font-weight:500;line-height:1.45;color:var(--ink)}
+.persona-card>p{font-family:var(--f-body);font-size:14px;color:var(--secondary);line-height:1.6}
+.persona-get{margin-top:auto;padding-top:20px;font-family:var(--f-body);font-size:13.5px;line-height:1.55;color:var(--secondary)}
+.persona-get strong{font-family:var(--f-display);font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--color-orange);display:block;margin-bottom:4px}
+.fit-lead{margin-top:64px;max-width:540px}
 
 /* ═══════════════════════════════════
    FAQ
@@ -514,6 +522,7 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
   .pain-grid{grid-template-columns:1fr}
   .app-grid{grid-template-columns:1fr}
   .fit-grid{grid-template-columns:1fr}
+  .persona-grid{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr;gap:40px}
   .footer-links{grid-template-columns:1fr 1fr}
   .footer-bottom{flex-direction:column;gap:8px}
@@ -883,8 +892,29 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
 <section class="sec sec-alt" id="fuer-wen">
   <div class="w">
     <span class="sec-label" data-r>Für wen</span>
-    <h2 data-r>Für wen wir arbeiten — und für wen nicht</h2>
-    <p class="sub" data-r>Ein Erstgespräch lohnt sich nur, wenn es passt. Deshalb sagen wir beides offen.</p>
+    <h2 data-r>Für wen geeignet</h2>
+    <p class="sub" data-r>Unsere Kunden sind Führungskräfte in der Deutschschweiz, deren Unternehmen läuft — aber zu viel Führungszeit an Koordination verliert. Vielleicht erkennen Sie sich in einer dieser Situationen.</p>
+    <div class="persona-grid">
+      <div class="persona-card" data-r>
+        <span class="persona-role">Geschäftsführung · 50–200 Mitarbeitende</span>
+        <blockquote>«Ich bin zu viel im Tagesgeschäft gefangen.»</blockquote>
+        <p>Ihr Unternehmen ist etabliert, aber Sie verbringen den Grossteil der Woche mit Berichten, Statusmeetings und Nachfassen. Für die Arbeit, die nur Sie tun können — Strategie, Kunden, Entwicklung des Unternehmens — bleibt kaum Raum.</p>
+        <div class="persona-get"><strong>Was Sie bei uns finden</strong>Tägliches Briefing, automatisierte Berichte und spürbare Entlastung bei der Koordination — ohne dass Sie sich selbst in KI einarbeiten müssen.</div>
+      </div>
+      <div class="persona-card" data-r>
+        <span class="persona-role">Geschäftsleitung im Wachstum · 100–500 Mitarbeitende</span>
+        <blockquote>«Unsere Strukturen wachsen nicht mit.»</blockquote>
+        <p>Das Unternehmen wächst, aber Informationen fliessen wie vor fünf Jahren. Das mittlere Management verbringt seine Zeit mit Abstimmung und Berichterstattung statt mit Führen — und Sie erfahren zu spät, was wirklich passiert.</p>
+        <div class="persona-get"><strong>Was Sie bei uns finden</strong>Systematischen Informationsfluss über Abteilungen hinweg, automatisierte Routineprozesse und verlässliche Entscheidungsgrundlagen.</div>
+      </div>
+      <div class="persona-card" data-r>
+        <span class="persona-role">Mitglied der Geschäftsleitung · 200–1'500 Mitarbeitende</span>
+        <blockquote>«Wir wissen, dass KI uns helfen könnte — aber wir kommen nicht ins Tun.»</blockquote>
+        <p>KI steht auf Ihrer strategischen Agenda, vielleicht gab es erste Versuche. Die eigene IT ist mit Infrastruktur ausgelastet. Was fehlt, ist ein Partner, der die Brücke zwischen Geschäft und KI schlägt.</p>
+        <div class="persona-get"><strong>Was Sie bei uns finden</strong>Einen Einstieg als Pilotprojekt in einem Bereich — mit messbaren Ergebnissen und klarer Option zur Skalierung.</div>
+      </div>
+    </div>
+    <p class="sub fit-lead" data-r>Und weil ein Erstgespräch nur lohnt, wenn es passt, sagen wir offen, wann es passt — und wann nicht.</p>
     <div class="fit-grid">
       <div class="fit-card yes" data-r>
         <h3>Gute Voraussetzungen</h3>

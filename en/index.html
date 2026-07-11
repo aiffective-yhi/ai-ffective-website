@@ -361,6 +361,14 @@ h2[data-r]:not(.v)::after{width:0}
 .fit-card li:last-child{border:none}
 .fit-card li::before{content:'';position:absolute;left:0;top:19px;width:10px;height:2px;background:var(--color-orange)}
 .fit-card.no li::before{background:var(--tertiary)}
+.persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.persona-card{display:flex;flex-direction:column;background:var(--color-white);border:1px solid var(--border);border-left:3px solid var(--color-orange);border-radius:8px;padding:32px 28px}
+.persona-role{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--tertiary);margin-bottom:16px}
+.persona-card blockquote{margin:0 0 14px;font-family:var(--f-body);font-size:18px;font-weight:500;line-height:1.45;color:var(--ink)}
+.persona-card>p{font-family:var(--f-body);font-size:14px;color:var(--secondary);line-height:1.6}
+.persona-get{margin-top:auto;padding-top:20px;font-family:var(--f-body);font-size:13.5px;line-height:1.55;color:var(--secondary)}
+.persona-get strong{font-family:var(--f-display);font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--color-orange);display:block;margin-bottom:4px}
+.fit-lead{margin-top:64px;max-width:540px}
 
 .faq-item{border-bottom:1px solid var(--border)}
 .faq-item:first-child{border-top:1px solid var(--border)}
@@ -450,6 +458,7 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
   .pain-grid{grid-template-columns:1fr}
   .app-grid{grid-template-columns:1fr}
   .fit-grid{grid-template-columns:1fr}
+  .persona-grid{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr;gap:40px}
   .footer-links{grid-template-columns:1fr 1fr}
   .footer-bottom{flex-direction:column;gap:8px}
@@ -819,8 +828,29 @@ footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rg
 <section class="sec sec-alt" id="fuer-wen">
   <div class="w">
     <span class="sec-label" data-r>Who it's for</span>
-    <h2 data-r>Who we work with — and who we don't</h2>
-    <p class="sub" data-r>An intro call is only worth it if we fit. So we say both openly.</p>
+    <h2 data-r>Who this is for</h2>
+    <p class="sub" data-r>Our clients are leaders in German-speaking Switzerland whose companies run well — but lose too much leadership time to coordination. You may recognise yourself in one of these situations.</p>
+    <div class="persona-grid">
+      <div class="persona-card" data-r>
+        <span class="persona-role">Managing director · 50–200 employees</span>
+        <blockquote>"I'm trapped in day-to-day operations."</blockquote>
+        <p>Your company is established, yet most of your week goes to reports, status meetings and chasing updates. Little room is left for the work only you can do — strategy, clients, developing the business.</p>
+        <div class="persona-get"><strong>What you find with us</strong>A daily briefing, automated reports and tangible relief from coordination — without having to learn AI yourself.</div>
+      </div>
+      <div class="persona-card" data-r>
+        <span class="persona-role">Leadership team in growth mode · 100–500 employees</span>
+        <blockquote>"Our structures aren't growing with us."</blockquote>
+        <p>The company is growing, but information flows like it did five years ago. Middle management spends its time aligning and reporting instead of leading — and you learn too late what is really going on.</p>
+        <div class="persona-get"><strong>What you find with us</strong>Systematic information flow across departments, automated routine processes and reliable decision-making foundations.</div>
+      </div>
+      <div class="persona-card" data-r>
+        <span class="persona-role">Executive board member · 200–1,500 employees</span>
+        <blockquote>"We know AI could help us — but we never get moving."</blockquote>
+        <p>AI is on your strategic agenda, perhaps with first experiments behind you. Your IT is busy with infrastructure. What's missing is a partner who bridges business and AI.</p>
+        <div class="persona-get"><strong>What you find with us</strong>An entry as a pilot project in one area — with measurable results and a clear option to scale.</div>
+      </div>
+    </div>
+    <p class="sub fit-lead" data-r>And because an intro call is only worth it if we fit, we say openly when it fits — and when it doesn't.</p>
     <div class="fit-grid">
       <div class="fit-card yes" data-r>
         <h3>Good preconditions</h3>
