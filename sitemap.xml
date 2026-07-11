@@ -12,21 +12,48 @@
   </url>
   <url>
     <loc>https://ai-ffective.netlify.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://ai-ffective.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-ffective.netlify.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-ffective.netlify.app/"/>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ai-ffective.netlify.app/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://ai-ffective.netlify.app/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-ffective.netlify.app/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-ffective.netlify.app/blog/"/>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ai-ffective.netlify.app/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://ai-ffective.netlify.app/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-ffective.netlify.app/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-ffective.netlify.app/blog/"/>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ai-ffective.netlify.app/blog/ki-betriebsschicht/</loc>
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://ai-ffective.netlify.app/blog/ki-betriebsschicht/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-ffective.netlify.app/en/blog/ai-operating-layer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-ffective.netlify.app/blog/ki-betriebsschicht/"/>
     <lastmod>2026-07-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ai-ffective.netlify.app/en/blog/ai-operating-layer/</loc>
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://ai-ffective.netlify.app/blog/ki-betriebsschicht/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-ffective.netlify.app/en/blog/ai-operating-layer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-ffective.netlify.app/blog/ki-betriebsschicht/"/>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ai-ffective.netlify.app/datenschutz.html</loc>

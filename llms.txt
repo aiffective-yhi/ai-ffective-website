@@ -51,3 +51,4 @@ Beide Tracks sind DSG- (Schweizer Datenschutzgesetz) und DSGVO-konform.
 
 ## Blog
 - Die neue Betriebsschicht: Wie KI die Architektur deines Unternehmens verändert — https://ai-ffective.netlify.app/blog/ki-betriebsschicht/
+- (English) The New Operating Layer: How AI Changes Your Company's Architecture — https://ai-ffective.netlify.app/en/blog/ai-operating-layer/
