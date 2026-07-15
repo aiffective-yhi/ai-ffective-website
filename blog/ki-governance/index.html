@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KI-Governance: nicht die Bremse, sondern das Fundament — AI-ffective</title>
+<meta name="description" content="KI-Governance gilt als Bremse. In Wirklichkeit macht sie KI im Betrieb erst verlässlich: welche Werkzeuge, welche Daten, wer prüft, und warum ein PDF nicht reicht.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="KI-Governance: nicht die Bremse, sondern das Fundament">
+<meta property="og:description" content="Warum die Alternative zu geregelter KI nicht keine KI ist, sondern KI ohne Steuerung. Und womit du diese Woche anfangen kannst.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_CH">
+<meta property="og:url" content="https://ai-ffective.netlify.app/blog/ki-governance/">
+<meta property="article:published_time" content="2026-07-15">
+<link rel="alternate" hreflang="de-CH" href="https://ai-ffective.netlify.app/blog/ki-governance/">
+<link rel="alternate" hreflang="en" href="https://ai-ffective.netlify.app/en/blog/ai-governance/">
+<link rel="alternate" hreflang="x-default" href="https://ai-ffective.netlify.app/blog/ki-governance/">
+<link rel="canonical" href="https://ai-ffective.netlify.app/blog/ki-governance/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"KI-Governance: nicht die Bremse, sondern das Fundament","description":"KI-Governance gilt als Bremse. In Wirklichkeit macht sie KI im Betrieb erst verlässlich: welche Werkzeuge, welche Daten, wer prüft, und warum ein PDF nicht reicht.","datePublished":"2026-07-15","dateModified":"2026-07-15","inLanguage":"de-CH","author":{"@type":"Organization","name":"AI-ffective","url":"https://ai-ffective.netlify.app"},"publisher":{"@type":"Organization","name":"AI-ffective","url":"https://ai-ffective.netlify.app"},"mainEntityOfPage":"https://ai-ffective.netlify.app/blog/ki-governance/"}
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+  --color-black:#1A1A1A;
+  --color-gray:#E8E8E8;
+  --color-white:#FFFFFF;
+  --color-orange:#FF6B00;
+  --ink:#1A1A1A;
+  --secondary:rgba(26,26,26,0.62);
+  --tertiary:rgba(26,26,26,0.38);
+  --border:rgba(0,0,0,0.09);
+  --bg:#FFFFFF;
+  --f-display:'Exo 2',system-ui,sans-serif;
+  --f-body:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+body{font-family:var(--f-body);color:var(--ink);background:var(--bg);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(255,107,0,.18)}
+a{color:inherit;text-decoration:none}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--color-black);border-bottom:1px solid rgba(255,255,255,.08)}
+nav .w-wide{display:flex;justify-content:space-between;align-items:center;padding:14px 32px;max-width:1040px;margin:0 auto}
+.logo{font-family:var(--f-display);font-size:17px;font-weight:800;letter-spacing:0.02em;text-transform:uppercase;color:#fff}
+.logo .ai{color:var(--color-orange)}
+.logo .hy{color:rgba(255,255,255,.35);font-weight:700}
+.n-links{display:flex;gap:32px;align-items:center}
+.n-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,.75);transition:color .15s}
+.n-links a:hover{color:#fff}
+.n-links a.curr{color:#fff}
+.lang-sw{display:flex;gap:5px;align-items:center}
+.lang-sw a{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.38);transition:color .15s}
+.lang-sw a:hover{color:rgba(255,255,255,.75)}
+.lang-sw a.curr{color:rgba(255,255,255,.82)}
+.lang-sw span{color:rgba(255,255,255,.18);font-size:11px}
+.n-cta{font-family:var(--f-display) !important;font-weight:700 !important;font-size:11px !important;letter-spacing:.06em !important;text-transform:uppercase !important;background:var(--color-orange) !important;color:#fff !important;padding:10px 20px !important;border-radius:6px !important;transition:background .15s !important}
+.n-cta:hover{background:#FF3300 !important}
+@media(max-width:800px){.n-links > a:not(.n-cta){display:none}.n-links{gap:16px}}
+
+.article-head{background:var(--color-black);padding:150px 0 64px;position:relative;overflow:hidden}
+.article-head::before{content:'';position:absolute;top:-30%;right:-15%;width:70%;height:160%;background:radial-gradient(ellipse at 60% 45%,rgba(255,107,0,.14) 0%,rgba(204,34,0,.06) 40%,transparent 68%);pointer-events:none}
+.article-head .w{position:relative;z-index:2}
+.crumb{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-orange);display:inline-block;margin-bottom:20px}
+.crumb a{color:rgba(255,255,255,.5);transition:color .15s}
+.crumb a:hover{color:#fff}
+.article-head h1{font-family:var(--f-display);font-size:clamp(26px,4vw,42px);font-weight:900;line-height:1.12;letter-spacing:.02em;text-transform:uppercase;color:#fff;max-width:720px}
+.article-meta{margin-top:24px;font-size:13px;color:rgba(255,255,255,.45)}
+
+.w{max-width:680px;margin:0 auto;padding:0 32px}
+.w-wide{max-width:1040px;margin:0 auto;padding:0 32px}
+
+article{padding:72px 0 40px}
+article p{margin-bottom:24px;color:var(--ink)}
+article .lead{font-size:19px;color:var(--secondary)}
+article h2{font-family:var(--f-display);font-size:19px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);margin:52px 0 18px}
+article h2::after{content:'';display:block;width:32px;height:2px;background:var(--color-orange);margin-top:10px}
+article strong{font-weight:600}
+.exercise{padding:22px 26px;border-left:3px solid var(--color-orange);background:rgba(255,107,0,.05);margin-bottom:18px}
+.exercise p{margin-bottom:0}
+.exercise strong{font-family:var(--f-display);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:6px;color:var(--ink)}
+
+.illus{margin:44px 0;padding:28px 20px 20px;background:#fff;border:1px solid var(--border);border-radius:8px;background-image:radial-gradient(rgba(26,26,26,.05) 1px,transparent 1px);background-size:18px 18px}
+.illus svg{width:100%;height:auto;display:block}
+.illus figcaption{font-family:var(--f-display);font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--tertiary);margin-top:16px;text-align:center}
+
+.article-cta{margin:64px auto 96px;max-width:680px;padding:0 32px}
+.article-cta-box{background:var(--color-black);border-radius:8px;padding:40px;position:relative;overflow:hidden}
+.article-cta-box::before{content:'';position:absolute;top:-40%;right:-20%;width:80%;height:180%;background:radial-gradient(ellipse at center,rgba(255,107,0,.18) 0%,transparent 65%);pointer-events:none}
+.article-cta-box h3{font-family:var(--f-display);font-size:18px;font-weight:800;letter-spacing:.02em;text-transform:uppercase;color:#fff;margin-bottom:10px;position:relative}
+.article-cta-box p{color:rgba(255,255,255,.75);font-size:15px;margin-bottom:24px;position:relative}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:14px 28px;border-radius:6px;background:var(--color-orange);color:#fff;transition:background .15s;position:relative}
+.btn:hover{background:#FF3300}
+.btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none}
+
+footer{background:var(--color-black);padding:48px 0 32px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-logo{font-family:var(--f-display);font-size:18px;font-weight:900;letter-spacing:.02em;text-transform:uppercase;color:#fff}
+.f-logo span{color:var(--color-orange)}
+.f-links{display:flex;gap:24px;flex-wrap:wrap}
+.f-links a{font-size:13px;color:rgba(255,255,255,.65);transition:color .15s}
+.f-links a:hover{color:#fff}
+.f-copy{width:100%;margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:rgba(255,255,255,.45)}
+
+@media(max-width:800px){
+  .article-head{padding:120px 0 48px}
+  article{padding:48px 0 24px}
+  .w,.w-wide{padding:0 20px}
+  .article-cta{padding:0 20px}
+  .article-cta-box{padding:28px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="w-wide">
+    <a href="/" class="logo"><span class="ai">AI</span><span class="hy">-</span><span class="ff">ffective</span></a>
+    <div class="n-links">
+      <a href="/#problem">Problem</a>
+      <a href="/#loesung">Lösung</a>
+      <a href="/#zusammenarbeit">Ablauf</a>
+      <a href="/blog/" class="curr">Blog</a>
+      <div class="lang-sw"><a href="/blog/ki-governance/" class="curr">DE</a><span>/</span><a href="/en/blog/ai-governance/">EN</a></div>
+      <a href="/#cta" class="n-cta">Erstgespräch</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-head">
+  <div class="w">
+    <span class="crumb"><a href="/blog/">Blog</a> &nbsp;/&nbsp; Governance</span>
+    <h1>KI-Governance: nicht die Bremse, sondern das Fundament</h1>
+    <p class="article-meta">15. Juli 2026 · 5 Min. Lesezeit</p>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="w">
+    <p class="lead">KI-Governance klingt nach einem Ordner, der KI ausbremst. Nach Formularen, Freigaben und einer Rechtsabteilung, die Nein sagt. In Wirklichkeit ist Governance das, was KI im Betrieb erst brauchbar macht. Denn die Alternative zu geregelter KI ist nicht keine KI. Es ist KI, die längst läuft, nur ohne dass jemand sie steuert.</p>
+
+    <h2>Freitag, 16 Uhr</h2>
+    <p>Eine Mitarbeiterin muss bis am Abend eine Offerte rausschicken. Sie kopiert die Kundenliste und die letzten drei Verträge in ein KI-Werkzeug und lässt sich einen Entwurf schreiben. In zwanzig Minuten ist sie fertig. Niemand hat ihr das erlaubt. Niemand hat es ihr verboten. Es hat einfach niemand entschieden.</p>
+    <p>Diese Szene ist der Normalzustand von KI in den meisten Unternehmen: nicht verboten, nicht geregelt, sondern einfach im Gange.</p>
+
+    <h2>Der Denkfehler bei Governance</h2>
+    <p>Die meisten Führungskräfte stellen die Frage falsch. Sie fragen: Sollen wir KI zulassen oder nicht? Und weil Zulassen nach Risiko klingt und Verbieten nach Nachteil im Wettbewerb, schieben sie die Entscheidung auf.</p>
+    <p>Nur: Während die Entscheidung wartet, ist KI längst im Haus. In den privaten Konten der Mitarbeitenden, im Copilot, der mit dem Office-Abo mitkam. Die eigentliche Frage ist deshalb nicht ob, sondern unter welchen Regeln. Governance ist die Antwort auf die zweite Frage.</p>
+    <p>Und diese Antwort bremst nicht. Sie macht das Gegenteil. Erst wenn klar ist, welche Werkzeuge erlaubt sind und welche Daten hineindürfen, können Mitarbeitende KI nutzen, ohne bei jedem Schritt ein ungutes Gefühl zu haben. Klarheit ist schneller als Unsicherheit.</p>
+
+    <h2>Governance ist kein Ordner, sondern drei Fragen</h2>
+    <p>Governance klingt grösser, als sie sein muss. Im Kern beantwortet sie drei Fragen, und keine davon braucht ein Gremium.</p>
+    <p><strong>Welche Werkzeuge sind erlaubt?</strong> Eine kurze Liste der freigegebenen KI-Werkzeuge. Alles andere ist vorerst nicht freigegeben, nicht als Verbot gedacht, sondern als bewusste Auswahl.</p>
+    <p><strong>Welche Daten dürfen hinein?</strong> Die wichtigste Frage. Kundendaten, Personaldaten, Zahlen aus dem Abschluss, Geschäftsgeheimnisse gehören nicht in ein öffentliches KI-Werkzeug. Der Rest darf.</p>
+    <p><strong>Wer prüft das Ergebnis?</strong> KI schreibt überzeugend, auch wenn sie falsch liegt. Bevor eine KI-Antwort in eine Offerte oder einen Vertrag wandert, schaut ein Mensch drüber.</p>
+    <p>Diese drei Antworten passen auf eine Seite. Und diese eine Seite ist mehr Governance, als die meisten Schweizer KMU heute haben.</p>
+
+    <h2>Was das Gesetz dazu sagt</h2>
+    <p>Ab 2026 greift der EU AI Act stufenweise. Er teilt KI-Anwendungen nach Risiko ein, und dieses Raster ist auch ohne juristische Pflicht ein nützlicher Kompass.</p>
+
+    <figure class="illus">
+      <svg viewBox="0 0 760 400" role="img" aria-label="Risiko-Pyramide des EU AI Act mit vier Stufen von minimal bis unannehmbar">
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#1A1A1A"/>
+          </marker>
+        </defs>
+        <!-- risk axis -->
+        <line x1="58" y1="316" x2="58" y2="44" stroke="#1A1A1A" stroke-width="1.5" marker-end="url(#ah)"/>
+        <text x="34" y="180" font-family="'Exo 2',sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#8A8A8A" text-anchor="middle" transform="rotate(-90 34 180)">RISIKO &amp; AUFSICHT</text>
+
+        <!-- tiers -->
+        <polygon points="270,40 330,40 375,108 225,108" fill="#FF6B00"/>
+        <polygon points="225,108 375,108 420,176 180,176" fill="#1A1A1A"/>
+        <polygon points="180,176 420,176 465,244 135,244" fill="#E8E8E8"/>
+        <polygon points="135,244 465,244 510,312 90,312" fill="#FFFFFF" stroke="#D8D8D8" stroke-width="1.5"/>
+
+        <!-- connectors -->
+        <line x1="352" y1="74" x2="494" y2="74" stroke="#CBCBCB" stroke-width="1.5"/>
+        <line x1="398" y1="142" x2="494" y2="142" stroke="#CBCBCB" stroke-width="1.5"/>
+        <line x1="443" y1="210" x2="494" y2="210" stroke="#CBCBCB" stroke-width="1.5"/>
+        <line x1="488" y1="278" x2="494" y2="278" stroke="#CBCBCB" stroke-width="1.5"/>
+        <circle cx="352" cy="74" r="3" fill="#FF6B00"/>
+        <circle cx="398" cy="142" r="3" fill="#1A1A1A"/>
+        <circle cx="443" cy="210" r="3" fill="#B4B4B4"/>
+        <circle cx="488" cy="278" r="3" fill="#B4B4B4"/>
+
+        <!-- callouts -->
+        <text x="502" y="70" font-family="'Exo 2',sans-serif" font-size="14" font-weight="800" fill="#1A1A1A">Unannehmbar</text>
+        <text x="502" y="88" font-family="'DM Sans',sans-serif" font-size="12" fill="#6A6A6A">Verboten, z.B. Social Scoring</text>
+
+        <text x="502" y="138" font-family="'Exo 2',sans-serif" font-size="14" font-weight="800" fill="#1A1A1A">Hohes Risiko</text>
+        <text x="502" y="156" font-family="'DM Sans',sans-serif" font-size="12" fill="#6A6A6A">Menschliche Aufsicht &amp; Nachweis</text>
+
+        <text x="502" y="206" font-family="'Exo 2',sans-serif" font-size="14" font-weight="800" fill="#1A1A1A">Begrenztes Risiko</text>
+        <text x="502" y="224" font-family="'DM Sans',sans-serif" font-size="12" fill="#6A6A6A">Transparenzpflicht: KI kenntlich machen</text>
+
+        <text x="502" y="274" font-family="'Exo 2',sans-serif" font-size="14" font-weight="800" fill="#1A1A1A">Minimales Risiko</text>
+        <text x="502" y="292" font-family="'DM Sans',sans-serif" font-size="12" fill="#6A6A6A">Keine Auflagen, z.B. Textentwurf</text>
+      </svg>
+      <figcaption>Risiko-Raster des EU AI Act, je stärker KI über Menschen entscheidet, desto mehr Aufsicht</figcaption>
+    </figure>
+
+    <p>Die meisten Anwendungen in einem KMU liegen unten in der Pyramide. Ein Werkzeug, das Mails formuliert oder Protokolle zusammenfasst, trägt minimales Risiko. Heikel wird es weiter oben, dort wo KI über Menschen entscheidet: bei der Vorauswahl von Bewerbungen, bei Kreditwürdigkeit, bei allem, was jemanden benachteiligen kann. Für solche Fälle verlangt das Gesetz Nachvollziehbarkeit und menschliche Aufsicht.</p>
+    <p>Die Schweiz ist an den AI Act nicht direkt gebunden. Wer EU-Kunden bedient, ist es indirekt, und der Bundesrat beobachtet die Entwicklung. Wichtiger als die Rechtsfrage ist aber der Reflex, den das Raster einübt: bei jeder KI-Anwendung zuerst fragen, wie stark sie über Menschen entscheidet. Je stärker, desto mehr Aufsicht.</p>
+
+    <h2>Warum ein PDF nicht reicht</h2>
+    <p>Der verbreitete Reflex ist, Governance einmal aufzuschreiben. Eine Richtlinie, freigegeben, abgelegt, erledigt. Sechs Monate später ist sie überholt: neue Werkzeuge, neue Anwendungsfälle und Leute, die die Richtlinie nie gesehen haben.</p>
+    <p>Governance driftet, genau wie das Wissen im Unternehmen driftet. Sie gehört deshalb nicht in einen Ordner, sondern in den laufenden Betrieb, mit einem festen Rhythmus.</p>
+
+    <figure class="illus">
+      <svg viewBox="0 0 640 400" role="img" aria-label="Governance als Kreislauf aus vier Schritten: Inventar, Regeln, Prüfen, Nachführen">
+        <defs>
+          <marker id="ah2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#FF6B00"/>
+          </marker>
+        </defs>
+        <!-- circular flow arrows (clockwise) -->
+        <path d="M 398,86 A 170,150 0 0 1 536,238" fill="none" stroke="#FF6B00" stroke-width="2" marker-end="url(#ah2)"/>
+        <path d="M 470,330 A 170,150 0 0 1 250,338" fill="none" stroke="#FF6B00" stroke-width="2" marker-end="url(#ah2)"/>
+        <path d="M 104,238 A 170,150 0 0 1 236,90" fill="none" stroke="#FF6B00" stroke-width="2" marker-end="url(#ah2)"/>
+        <path d="M 250,62 A 170,150 0 0 1 390,62" fill="none" stroke="#FF6B00" stroke-width="2" marker-end="url(#ah2)"/>
+
+        <!-- center label -->
+        <text x="320" y="196" font-family="'Exo 2',sans-serif" font-size="13" font-weight="800" letter-spacing="1" fill="#1A1A1A" text-anchor="middle">EINMAL</text>
+        <text x="320" y="216" font-family="'Exo 2',sans-serif" font-size="13" font-weight="800" letter-spacing="1" fill="#1A1A1A" text-anchor="middle">IM QUARTAL</text>
+
+        <!-- nodes -->
+        <g font-family="'Exo 2',sans-serif" font-weight="800" font-size="14" text-anchor="middle">
+          <!-- top: Inventar -->
+          <rect x="242" y="26" width="156" height="60" rx="8" fill="#1A1A1A"/>
+          <text x="320" y="52" fill="#FF6B00" font-size="11" letter-spacing="1">01</text>
+          <text x="320" y="72" fill="#FFFFFF">INVENTAR</text>
+          <!-- right: Regeln -->
+          <rect x="470" y="180" width="156" height="60" rx="8" fill="#F4F4F4" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="548" y="206" fill="#FF6B00" font-size="11" letter-spacing="1">02</text>
+          <text x="548" y="226" fill="#1A1A1A">REGELN</text>
+          <!-- bottom: Prüfen -->
+          <rect x="242" y="332" width="156" height="60" rx="8" fill="#F4F4F4" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="320" y="358" fill="#FF6B00" font-size="11" letter-spacing="1">03</text>
+          <text x="320" y="378" fill="#1A1A1A">PRÜFEN</text>
+          <!-- left: Nachführen -->
+          <rect x="14" y="180" width="156" height="60" rx="8" fill="#F4F4F4" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="92" y="206" fill="#FF6B00" font-size="11" letter-spacing="1">04</text>
+          <text x="92" y="226" fill="#1A1A1A">NACHFÜHREN</text>
+        </g>
+      </svg>
+      <figcaption>Governance gehört betrieben, nicht abgelegt, ein fester Rhythmus statt eines einmaligen Dokuments</figcaption>
+    </figure>
+
+    <p>Einmal im Quartal die Runde: Welche KI-Werkzeuge sind neu dazugekommen? Stimmen die Regeln noch? Gab es einen Vorfall, aus dem wir lernen? Das ist keine grosse Übung. Aber sie hält die Governance so aktuell wie die Werkzeuge, die sie regelt.</p>
+    <p>Das ist derselbe Gedanke wie bei der <a href="/blog/ki-betriebsschicht/" style="color:var(--color-orange);font-weight:500">Betriebsschicht</a>: KI im Unternehmen ist kein Projekt mit Enddatum, sondern etwas, das betrieben wird. Governance ist der Teil davon, der dafür sorgt, dass man dem System trauen kann.</p>
+
+    <h2>Womit du diese Woche anfangen kannst</h2>
+    <p>Du brauchst keine Richtlinie und keine Beratung, um anzufangen. Drei Schritte zeigen dir in einer Woche, wo dein Betrieb bei KI-Governance steht.</p>
+    <div class="exercise">
+      <p><strong>1 — Mach das Inventar sichtbar</strong>Frag im Team offen und ohne Konsequenz, welche KI-Werkzeuge gerade benutzt werden, auch die privaten. Die Liste ist fast immer länger als erwartet. Sie ist der ehrliche Ausgangspunkt.</p>
+    </div>
+    <div class="exercise">
+      <p><strong>2 — Schreib die eine Seite</strong>Drei Überschriften: erlaubte Werkzeuge, Daten die nicht hineindürfen, wer Ergebnisse prüft. Fülle sie mit dem, was heute schon gelten soll. Mehr braucht die erste Version nicht.</p>
+    </div>
+    <div class="exercise">
+      <p><strong>3 — Sortier deine Daten nach Ampel</strong>Nimm die Datenarten in deinem Betrieb und teil sie in drei Stufen: frei für jedes Werkzeug, nur für freigegebene, für keines. Diese Einteilung beantwortet die Frage, die sich deinen Mitarbeitenden täglich stellt.</p>
+    </div>
+
+    <figure class="illus">
+      <svg viewBox="0 0 700 300" role="img" aria-label="Daten in drei Freigabestufen: frei, eingeschränkt, gesperrt">
+        <g font-family="'DM Sans',sans-serif">
+          <!-- Frei -->
+          <rect x="20" y="24" width="660" height="76" rx="8" fill="#FFFFFF" stroke="#D8D8D8" stroke-width="1.5"/>
+          <circle cx="64" cy="62" r="17" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+          <path d="M56,62 l6,6 l11,-13" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="102" y="56" font-family="'Exo 2',sans-serif" font-size="16" font-weight="800" fill="#1A1A1A">FREI</text>
+          <text x="102" y="78" font-size="13.5" fill="#6A6A6A">Öffentliche Infos, allgemeine Fragen, darf in jedes Werkzeug</text>
+
+          <!-- Eingeschränkt -->
+          <rect x="20" y="112" width="660" height="76" rx="8" fill="#E8E8E8"/>
+          <circle cx="64" cy="150" r="17" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+          <path d="M64,150 l0,-11 M64,150 l10,6" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="102" y="144" font-family="'Exo 2',sans-serif" font-size="16" font-weight="800" fill="#1A1A1A">EINGESCHRÄNKT</text>
+          <text x="102" y="166" font-size="13.5" fill="#4A4A4A">Interne Dokumente, EntwÃ¼rfe, nur in freigegebene Werkzeuge</text>
+
+          <!-- Gesperrt -->
+          <rect x="20" y="200" width="660" height="76" rx="8" fill="#1A1A1A"/>
+          <circle cx="64" cy="238" r="17" fill="none" stroke="#FF6B00" stroke-width="2"/>
+          <path d="M57,231 l14,14 M71,231 l-14,14" fill="none" stroke="#FF6B00" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="102" y="232" font-family="'Exo 2',sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">GESPERRT</text>
+          <text x="102" y="254" font-size="13.5" fill="rgba(255,255,255,.72)">Kunden-, Personal-, Finanzdaten, GeschÃ¤ftsgeheimnisse, in kein Werkzeug</text>
+        </g>
+      </svg>
+      <figcaption>Die Daten-Ampel, die eine Regel, die deine Mitarbeitenden täglich brauchen</figcaption>
+    </figure>
+
+    <h2>Was du damit gewinnst</h2>
+    <p>Governance hat einen schlechten Ruf, weil man sie mit Bürokratie verwechselt. Was sie wirklich bringt, ist Tempo mit ruhigem Gewissen. Mitarbeitende, die KI nutzen, ohne heimlich Daten zu verschieben. Und ein Betrieb, der beim nächsten Datenvorfall nicht aufschreckt, weil klar ist, wer welche Ergebnisse geprüft hat.</p>
+    <p>Das ist kein Widerspruch zu schneller KI-Einführung. Es ist ihre Voraussetzung.</p>
+  </div>
+</article>
+
+<div class="article-cta">
+  <div class="article-cta-box">
+    <h3>Wie steht dein Betrieb bei KI-Governance?</h3>
+    <p>Wir bauen und betreiben die KI-Betriebsschicht für Schweizer Unternehmen, und Governance gehört dazu. Am Anfang steht eine Durchleuchtung: Wir schauen, welche KI heute schon im Einsatz ist und welche Regeln fehlen. Dein Freitagnachmittag reicht als Einstieg.</p>
+    <a href="/#cta" class="btn">Erstgespräch vereinbaren <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="w-wide footer-inner">
+    <div class="f-logo">AI-<span>ffective</span></div>
+    <div class="f-links">
+      <a href="/">Startseite</a>
+      <a href="/blog/">Blog</a>
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+    </div>
+    <div class="f-copy">&#169; 2026 AI-ffective — Managed AI Operations · Zürich, Schweiz</div>
+  </div>
+</footer>
+
+</body>
+</html>
