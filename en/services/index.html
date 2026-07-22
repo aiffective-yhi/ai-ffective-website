@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — AI-ffective | AI Operations for Swiss Companies</title>
+<meta name="description" content="From AI ambition to daily operations: ten services in two fields — identify where AI creates value, then build and run the system that delivers it.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Services — AI-ffective">
+<meta property="og:description" content="From AI ambition to daily operations: all AI-ffective services at a glance.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_CH">
+<meta property="og:url" content="https://ai-ffective.com/en/services/">
+<meta property="og:image" content="https://ai-ffective.com/og-image.png">
+<link rel="alternate" hreflang="de-CH" href="https://ai-ffective.com/leistungen/">
+<link rel="alternate" hreflang="en" href="https://ai-ffective.com/en/services/">
+<link rel="alternate" hreflang="x-default" href="https://ai-ffective.com/leistungen/">
+<link rel="canonical" href="https://ai-ffective.com/en/services/">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"OfferCatalog","name":"Services — AI-ffective","url":"https://ai-ffective.com/en/services/","provider":{"@id":"https://ai-ffective.com/#org"},"itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Ambition & Target Picture"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Workflow Analysis & Redesign"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Operating Model"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Company Memory"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Workflows & Briefings"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Agentic Architectures"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Development & Data Integration"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Testing & Validation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Embedding & Adoption"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Safety & Guardrails"}}]}
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+  --color-black:#1A1A1A;
+  --color-gray:#E8E8E8;
+  --color-white:#FFFFFF;
+  --color-orange:#FF6B00;
+  --ink:#1A1A1A;
+  --secondary:rgba(26,26,26,0.62);
+  --tertiary:rgba(26,26,26,0.38);
+  --border:rgba(0,0,0,0.09);
+  --bg:#FFFFFF;
+  --bg-alt:#F2F2F2;
+  --f-display:'Exo 2',system-ui,sans-serif;
+  --f-body:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+body{font-family:var(--f-body);color:var(--ink);background:var(--bg);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(255,107,0,.18)}
+a{color:inherit;text-decoration:none}
+.skip{position:absolute;top:-60px;left:16px;background:var(--color-black);color:#fff;padding:8px 16px;font-size:13px;font-weight:600;z-index:9999;transition:top .2s}
+.skip:focus{top:0}
+.rails{position:fixed;top:0;bottom:0;left:50%;transform:translateX(-50%);width:min(1104px,100%);border-left:1px solid rgba(0,0,0,.05);border-right:1px solid rgba(0,0,0,.05);pointer-events:none;z-index:4}
+@media(max-width:1140px){.rails{display:none}}
+[data-r]{opacity:0;transform:translateY(16px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
+[data-r].v{opacity:1;transform:none}
+[data-r]:nth-child(2){transition-delay:.08s}
+[data-r]:nth-child(3){transition-delay:.16s}
+[data-r]:nth-child(4){transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){[data-r]{opacity:1 !important;transform:none !important;transition:none !important}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--color-black);border-bottom:1px solid rgba(255,255,255,.08);transition:box-shadow .2s}
+nav.scrolled{box-shadow:0 1px 24px rgba(0,0,0,.4)}
+nav .w-wide{display:flex;justify-content:space-between;align-items:center;padding:14px 32px;max-width:1040px;margin:0 auto}
+.logo{font-family:var(--f-display);font-size:17px;font-weight:800;letter-spacing:0.02em;text-transform:uppercase;color:#fff}
+.logo .ai{color:var(--color-orange)}
+.logo .hy{color:rgba(255,255,255,.35);font-weight:700}
+.logo .ff{color:#fff}
+.n-links{display:flex;gap:32px;align-items:center}
+.n-links a{font-family:var(--f-body);font-size:13px;font-weight:500;color:rgba(255,255,255,.75);transition:color .15s}
+.n-links a:hover{color:#fff}
+.n-links a.curr{color:#fff}
+.n-cta{font-family:var(--f-display) !important;font-weight:700 !important;font-size:11px !important;letter-spacing:.06em !important;text-transform:uppercase !important;background:var(--color-orange) !important;color:#fff !important;padding:10px 20px !important;border-radius:6px !important;transition:background .15s,transform .15s !important}
+.n-cta:hover{background:#FF3300 !important;transform:translateY(-1px) !important}
+.n-tog{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+.n-tog span{display:block;width:18px;height:1.5px;background:#fff;transition:all .3s}
+.n-tog.on span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
+.n-tog.on span:nth-child(2){opacity:0}
+.n-tog.on span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
+.n-mob{display:none;flex-direction:column;padding:12px 32px 24px;background:var(--color-black);border-top:1px solid rgba(255,255,255,.08)}
+.n-mob.open{display:flex}
+.n-mob a{padding:12px 0;font-size:15px;color:rgba(255,255,255,.75);border-bottom:1px solid rgba(255,255,255,.08)}
+.n-mob a:last-child{border:none;color:var(--color-orange);font-weight:600;padding-top:16px}
+.lang-sw{display:flex;gap:5px;align-items:center;margin-left:4px}
+.lang-sw a{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.38);transition:color .15s}
+.lang-sw a:hover{color:rgba(255,255,255,.75)}
+.lang-sw a.curr{color:rgba(255,255,255,.82)}
+.lang-sw span{color:rgba(255,255,255,.18);font-size:11px}
+.lang-sw-mob{padding:12px 0;display:flex;gap:8px;align-items:center;border-bottom:1px solid rgba(255,255,255,.08)}
+.lang-sw-mob a{font-family:var(--f-display);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.4);transition:color .15s}
+.lang-sw-mob a.curr{color:rgba(255,255,255,.85)}
+.lang-sw-mob span{color:rgba(255,255,255,.2)}
+
+/* Layout + typography */
+.w{max-width:720px;margin:0 auto;padding:0 32px}
+.w-wide{max-width:1040px;margin:0 auto;padding:0 32px}
+.sec{padding:104px 0;background:var(--bg)}
+.sec+.sec{border-top:1px solid var(--border)}
+.sec-alt{background:var(--bg-alt)}
+.sec-dots{background-image:radial-gradient(circle,rgba(208,208,208,.55) 1px,transparent 1px);background-size:22px 22px}
+h1{font-family:var(--f-display);font-size:clamp(34px,4.5vw,54px);font-weight:900;line-height:1.06;letter-spacing:0.02em;text-transform:uppercase}
+h2{font-family:var(--f-display);font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.15;letter-spacing:0.02em;text-transform:uppercase;color:var(--color-orange)}
+h3{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.3;letter-spacing:0.02em;text-transform:uppercase}
+.sub{font-family:var(--f-body);font-size:17px;color:var(--secondary);line-height:1.7;margin-top:16px;max-width:540px}
+.sec-label{font-family:var(--f-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--tertiary);margin-bottom:12px;display:block}
+.sec h2::after,.sec-alt h2::after{content:'';display:block;width:36px;height:2px;background:var(--color-orange);margin-top:14px;transition:width .7s cubic-bezier(.22,1,.36,1) .2s}
+h2[data-r]:not(.v)::after{width:0}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:14px 28px;border:none;cursor:pointer;transition:all .2s;border-radius:6px;text-decoration:none}
+.btn-p{background:var(--color-orange);color:#fff}
+.btn-p:hover{background:#FF3300;transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,80,0,.3)}
+.btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none}
+
+/* ── Page header — dark ── */
+.page-hero{position:relative;padding:170px 0 90px;background:var(--color-black);overflow:hidden}
+.page-hero::before{content:'';position:absolute;top:-30%;right:-15%;width:70%;height:160%;background:radial-gradient(ellipse at 60% 45%,rgba(255,107,0,.16) 0%,rgba(204,34,0,.07) 40%,transparent 68%);pointer-events:none}
+.page-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
+.page-hero .w-wide{position:relative;z-index:2}
+.page-hero h1{color:#fff}
+.page-hero h1 em{font-style:normal;color:var(--color-orange)}
+.page-hero .sub{color:rgba(255,255,255,.82);max-width:560px}
+.page-hero .hero-pill{display:inline-flex;align-items:center;gap:10px;border:1.5px solid rgba(255,255,255,.3);border-radius:100px;padding:7px 18px 7px 8px;font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:28px}
+.page-hero .hero-pill i{width:16px;height:16px;border-radius:50%;background:var(--color-orange);flex-shrink:0}
+
+/* ── Two-pillar overview — dark panel ── */
+.pillars{padding:96px 0;background:var(--color-black);position:relative;overflow:hidden}
+.pillars::before{content:'';position:absolute;top:50%;left:-10%;transform:translateY(-50%);width:60%;height:250%;background:radial-gradient(ellipse at 30% 50%,rgba(255,107,0,.12) 0%,transparent 60%);pointer-events:none}
+.pillars .w-wide{position:relative;z-index:2}
+.pillars-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.pillar-icon{margin-bottom:36px;height:56px;display:flex;align-items:center}
+.pi-circle{width:52px;height:52px;border:1.5px solid var(--color-orange);border-radius:50%;position:relative}
+.pi-circle::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;background:var(--color-orange)}
+.pi-dots{display:grid;grid-template-columns:repeat(3,10px);grid-template-rows:repeat(3,10px);gap:8px}
+.pi-dots span{width:10px;height:10px;border-radius:50%;background:var(--color-orange)}
+.pillar h2{color:#fff;font-size:clamp(22px,2.6vw,30px)}
+.pillar h2::after{content:'';display:block;width:36px;height:2px;background:var(--color-orange);margin-top:14px}
+.pillar-sub{font-family:var(--f-body);font-size:15px;color:rgba(255,255,255,.55);margin-top:14px;margin-bottom:36px}
+.pillar-phase{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-orange);margin-bottom:20px}
+.svc-list{list-style:none}
+.svc-list a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.1);font-family:var(--f-body);font-size:16px;font-weight:500;color:rgba(255,255,255,.88);transition:color .15s,padding-left .15s}
+.svc-list a:hover{color:var(--color-orange);padding-left:6px}
+.svc-list svg{width:16px;height:16px;stroke:var(--color-orange);stroke-width:2;fill:none;flex-shrink:0;transition:transform .15s}
+.svc-list a:hover svg{transform:translateX(4px)}
+
+/* ── Service detail blocks ── */
+.svc-detail{padding:40px 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:start;scroll-margin-top:96px}
+.svc-detail:last-child{border-bottom:none}
+.svc-detail-head .svc-num{font-family:var(--f-display);font-size:12px;font-weight:900;color:var(--color-orange);letter-spacing:.1em;margin-bottom:6px}
+.svc-detail-head h3{font-size:17px}
+.svc-detail-head .svc-phase{display:inline-block;margin-top:10px;font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tertiary);border:1px solid var(--border);border-radius:100px;padding:4px 12px}
+.svc-detail-body p{font-size:15px;color:var(--secondary);font-family:var(--f-body)}
+.svc-erg{font-family:var(--f-body);font-size:14px;color:var(--ink);margin-top:14px;padding-top:12px;border-top:1px dashed var(--border)}
+.svc-erg strong{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-orange);display:block;margin-bottom:2px}
+
+/* Phases strip */
+.phase-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.phase-card{background:var(--color-white);border:1px solid var(--border);border-top:3px solid var(--color-orange);border-radius:8px;padding:24px 22px}
+.phase-card .pc-tag{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-orange);margin-bottom:8px}
+.phase-card h3{font-size:14px;margin-bottom:6px}
+.phase-card p{font-size:13px;color:var(--secondary);font-family:var(--f-body);line-height:1.55}
+.phase-card .pc-price{font-family:var(--f-display);font-size:14px;font-weight:900;color:var(--ink);margin-top:12px;letter-spacing:.02em}
+.phase-card .pc-price span{font-family:var(--f-body);font-size:11px;font-weight:400;color:var(--tertiary)}
+
+/* CTA */
+.cta-sec{padding:110px 0;text-align:center;background:var(--color-black);position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:500px;background:radial-gradient(ellipse at center,rgba(255,107,0,.18) 0%,rgba(255,60,0,.06) 45%,transparent 70%);pointer-events:none}
+.cta-sec h2{margin-bottom:12px;color:#fff}
+.cta-sec h2::after{background:#fff;opacity:.25;margin-left:auto;margin-right:auto}
+.cta-sec .sub{margin:0 auto 36px;text-align:center;max-width:440px;color:rgba(255,255,255,.75)}
+.cta-sec .w{position:relative;z-index:2}
+
+/* FOOTER */
+footer{background:var(--color-black);padding:72px 0 32px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-top{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-bottom:56px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08)}
+.f-logo{font-family:var(--f-display);font-size:22px;font-weight:900;letter-spacing:.02em;text-transform:uppercase;color:#fff;margin-bottom:12px}
+.f-logo span{color:var(--color-orange)}
+.f-tagline{font-family:var(--f-body);font-size:14px;color:rgba(255,255,255,.4);line-height:1.65;max-width:280px;margin-bottom:20px}
+.f-contact{display:flex;flex-direction:column;gap:4px}
+.f-contact a,.f-contact span{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.65)}
+.f-contact a:hover{color:var(--color-orange)}
+.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.fl-col{display:flex;flex-direction:column;gap:12px}
+.fl-col strong{font-family:var(--f-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:4px}
+.fl-col a{font-family:var(--f-body);font-size:13px;color:rgba(255,255,255,.65);transition:color .15s}
+.fl-col a:hover{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;font-family:var(--f-body);font-size:12px;color:rgba(255,255,255,.45)}
+
+@media(max-width:800px){
+  .n-links{display:none}
+  .n-tog{display:flex;flex-direction:column}
+  .sec{padding:64px 0}
+  .page-hero{padding:130px 0 64px}
+  h1{font-size:30px}
+  h2{font-size:22px}
+  .pillars{padding:64px 0}
+  .pillars-grid{grid-template-columns:1fr;gap:56px}
+  .svc-detail{grid-template-columns:1fr;gap:12px}
+  .phase-strip{grid-template-columns:1fr 1fr}
+  .w,.w-wide{padding:0 20px}
+  .footer-top{grid-template-columns:1fr;gap:40px}
+  .footer-links{grid-template-columns:1fr 1fr}
+  .footer-bottom{flex-direction:column;gap:8px}
+}
+@media(max-width:480px){
+  .w,.w-wide{padding:0 16px}
+  .sec{padding:48px 0}
+  .phase-strip{grid-template-columns:1fr}
+  .footer-links{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to content</a>
+<div class="rails" aria-hidden="true"></div>
+
+<nav>
+  <div class="w-wide">
+    <a href="/en/" class="logo"><span class="ai">AI</span><span class="hy">-</span><span class="ff">ffective</span></a>
+    <div class="n-links">
+      <a href="/en/#problem">Problem</a>
+      <a href="/en/#loesung">Solution</a>
+      <a href="/en/services/" class="curr">Services</a>
+      <a href="/en/#zusammenarbeit">Process</a>
+      <a href="/en/#branchen">Industries</a>
+      <a href="/en/blog/">Blog</a>
+      <div class="lang-sw"><a href="/leistungen/">DE</a><span>/</span><a href="/en/services/" class="curr">EN</a></div>
+      <a href="/en/#cta" class="n-cta">Intro Call</a>
+    </div>
+    <button class="n-tog" aria-label="Menu" id="nT"><span></span><span></span><span></span></button>
+  </div>
+  <div class="n-mob" id="nM">
+    <a href="/en/#problem">Problem</a>
+    <a href="/en/#loesung">Solution</a>
+    <a href="/en/services/">Services</a>
+    <a href="/en/#zusammenarbeit">Process</a>
+    <a href="/en/#branchen">Industries</a>
+    <a href="/en/blog/">Blog</a>
+    <div class="lang-sw-mob"><a href="/leistungen/">DE</a><span>/</span><a href="/en/services/" class="curr">EN</a></div>
+    <a href="/en/#cta">Book an intro call</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="page-hero-grid" aria-hidden="true"></div>
+  <div class="w-wide">
+    <p class="hero-pill"><i></i>Services</p>
+    <h1>Identify where AI creates value.<br><em>Build what delivers it.</em></h1>
+    <p class="sub">Every AI initiative answers two questions: where does AI create the most value in your company — and how does that become a system that holds up in daily operations? Our ten services cover both.</p>
+  </div>
+</header>
+
+<!-- TWO PILLARS -->
+<section class="pillars" id="overview">
+  <div class="w-wide">
+    <div class="pillars-grid">
+      <div class="pillar" data-r>
+        <div class="pillar-icon"><div class="pi-circle"></div></div>
+        <h2>Identify AI potential</h2>
+        <p class="pillar-sub">Find out where AI creates the most value in your operations</p>
+        <p class="pillar-phase">Assessment · Phase 1 — Discovery</p>
+        <ul class="svc-list">
+          <li><a href="#ambition">AI Ambition &amp; Target Picture <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+          <li><a href="#workflows">Workflow Analysis &amp; Redesign <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+          <li><a href="#operating-model">AI Operating Model <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="pillar" data-r>
+        <div class="pillar-icon"><div class="pi-dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+        <h2>Build &amp; operate the solution</h2>
+        <p class="pillar-sub">Build the system around that value — and keep it running</p>
+        <p class="pillar-phase">Phase 2 — Build · Phase 3 — Operations</p>
+        <ul class="svc-list">
+          <li><a href="#memory">Company Memory <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+          <li><a href="#ai-workflows">AI Workflows &amp; Briefings <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+          <li><a href="#agents">Agentic Architectures <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+          <li><a href="#development">Development &amp; Data Integration <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+          <li><a href="#testing">Testing &amp; Validation <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+          <li><a href="#adoption">Embedding &amp; Adoption <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+          <li><a href="#safety">Safety &amp; Guardrails <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLAR 1 DETAILS -->
+<section class="sec sec-dots">
+  <div class="w-wide">
+    <span class="sec-label" data-r>Field 1</span>
+    <h2 data-r>Identify AI potential</h2>
+    <p class="sub" data-r>Before we build, we establish what is worth building. These services deliver the foundation: a target picture, your real workflows, and an operating model that fits your company.</p>
+
+    <div style="margin-top:24px">
+      <div class="svc-detail" id="ambition" data-r>
+        <div class="svc-detail-head">
+          <div class="svc-num">01</div>
+          <h3>AI Ambition &amp; Target Picture</h3>
+          <span class="svc-phase">Assessment · Phase 1</span>
+        </div>
+        <div class="svc-detail-body">
+          <p>Where does AI pay off in your company — and where doesn't it? We evaluate your business areas by effort, benefit, and feasibility, and define with you which level you are aiming for: individual relief points, end-to-end workflows, or the intelligence layer across your entire operations.</p>
+          <div class="svc-erg"><strong>Outcome</strong>A prioritized target picture with the 3 biggest levers and an ROI estimate per lever.</div>
+        </div>
+      </div>
+
+      <div class="svc-detail" id="workflows" data-r>
+        <div class="svc-detail-head">
+          <div class="svc-num">02</div>
+          <h3>Workflow Analysis &amp; Redesign</h3>
+          <span class="svc-phase">Phase 1</span>
+        </div>
+        <div class="svc-detail-body">
+          <p>In interviews with your key people, we capture the real workflows — not the documented ones. Then we redesign them: which steps does AI take over, which stay with people, and where does coordination disappear entirely?</p>
+          <div class="svc-erg"><strong>Outcome</strong>Redesigned workflows for your most important processes — including 2–3 quick wins you can implement immediately.</div>
+        </div>
+      </div>
+
+      <div class="svc-detail" id="operating-model" data-r>
+        <div class="svc-detail-head">
+          <div class="svc-num">03</div>
+          <h3>AI Operating Model</h3>
+          <span class="svc-phase">Phase 1</span>
+        </div>
+        <div class="svc-detail-body">
+          <p>For AI to hold up in daily operations, it needs a place in your organization: who is responsible for what, which data may go where, cloud or fully local? We define the operating model before anything gets built.</p>
+          <div class="svc-erg"><strong>Outcome</strong>An action plan with roles, data access, and the track decision (cloud or local) — the blueprint for Phase 2.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLAR 2 DETAILS -->
+<section class="sec sec-alt">
+  <div class="w-wide">
+    <span class="sec-label" data-r>Field 2</span>
+    <h2 data-r>Build &amp; operate the solution</h2>
+    <p class="sub" data-r>The target picture becomes a running system. These services build your company's intelligence layer — and keep it current in operations.</p>
+
+    <div style="margin-top:24px">
+      <div class="svc-detail" id="memory" data-r>
+        <div class="svc-detail-head">
+          <div class="svc-num">04</div>
+          <h3>Company Memory</h3>
+          <span class="svc-phase">Phase 2</span>
+        </div>
+        <div class="svc-detail-body">
+          <p>The core of every solution: your strategy, organization, projects, and decision history — captured in a structured way, so AI doesn't answer generically but understands your operations. This is the part no off-the-shelf tool brings with it.</p>
+          <div class="svc-erg"><strong>Outcome</strong>A structured knowledge base that gives every AI tool full company context. The data belongs to you.</div>
+        </div>
+      </div>
+
+      <div class="svc-detail" id="ai-workflows" data-r>
+        <div class="svc-detail-head">
+          <div class="svc-num">05</div>
+          <h3>AI Workflows &amp; Briefings</h3>
+          <span class="svc-phase">Phase 2</span>
+        </div>
+        <div class="svc-detail-body">
+          <p>We design how your leadership works with the system: the daily briefing at 8 a.m., decision documents in your management board's format, reports that arrive before anyone asks. No new tool to learn — the information comes to you.</p>
+          <div class="svc-erg"><strong>Outcome</strong>Leadership briefings and templates that work in your daily routine from day one.</div>
+        </div>
+      </div>
+
+      <div class="svc-detail" id="agents" data-r>
+        <div class="svc-detail-head">
+          <div class="svc-num">06</div>
+          <h3>Agentic Architectures</h3>
+          <span class="svc-phase">Phase 2</span>
+        </div>
+        <div class="svc-detail-body">
+          <p>For recurring tasks, we build agents that work independently: compiling reports, monitoring delivery dates, escalating deviations. Every agent works on your company memory — within clearly defined boundaries.</p>
+          <div class="svc-erg"><strong>Outcome</strong>Automations that take over routine work without anyone having to trigger them.</div>
+        </div>
+      </div>
+
+      <div class="svc-detail" id="development" data-r>
+        <div class="svc-detail-head">
+          <div class="svc-num">07</div>
+          <h3>Development &amp; Data Integration</h3>
+          <span class="svc-phase">Phase 2</span>
+        </div>
+        <div class="svc-detail-body">
+          <p>We set up the AI system and connect your sources: ERP, CRM, finance, project management. In two tracks — cloud for maximum capability, or fully local when no data may leave your premises.</p>
+          <div class="svc-erg"><strong>Outcome</strong>A working system on your real data — first briefings are live before the build phase ends.</div>
+        </div>
+      </div>
+
+      <div class="svc-detail" id="testing" data-r>
+        <div class="svc-detail-head">
+          <div class="svc-num">08</div>
+          <h3>Testing &amp; Validation</h3>
+          <span class="svc-phase">Phase 2 · Phase 3</span>
+        </div>
+        <div class="svc-detail-body">
+          <p>Before a briefing or agent goes live, we test it against real cases from your operations. After that, we monitor quality continuously and correct when answers drift from reality — before anyone notices.</p>
+          <div class="svc-erg"><strong>Outcome</strong>Reliable output your leadership can trust — permanently, not just at launch.</div>
+        </div>
+      </div>
+
+      <div class="svc-detail" id="adoption" data-r>
+        <div class="svc-detail-head">
+          <div class="svc-num">09</div>
+          <h3>Embedding &amp; Adoption</h3>
+          <span class="svc-phase">Phase 2 · Phase 3</span>
+        </div>
+        <div class="svc-detail-body">
+          <p>A system only helps if it gets used. We onboard your leaders personally, expand usage step by step to new areas and people, and adapt the system when your company changes.</p>
+          <div class="svc-erg"><strong>Outcome</strong>A system that grows with your company — instead of a project that gathers dust after handover.</div>
+        </div>
+      </div>
+
+      <div class="svc-detail" id="safety" data-r>
+        <div class="svc-detail-head">
+          <div class="svc-num">10</div>
+          <h3>Safety &amp; Guardrails</h3>
+          <span class="svc-phase">Phase 2 · Phase 3</span>
+        </div>
+        <div class="svc-detail-body">
+          <p>We define what the system may do — and what it may not: access rights per person, clear boundaries for agents, handling of sensitive data. FADP- and GDPR-compliant, fully local with open-source models on request.</p>
+          <div class="svc-erg"><strong>Outcome</strong>A system your management board can approve with a clear conscience — with data sovereignty from day one.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHASE MAPPING -->
+<section class="sec">
+  <div class="w-wide">
+    <span class="sec-label" data-r>How the services fit together</span>
+    <h2 data-r>Ten services, three phases</h2>
+    <p class="sub" data-r>You don't buy individual services from a catalog — each phase bundles the services that are due next. After each phase, you decide whether to continue.</p>
+    <div class="phase-strip">
+      <div class="phase-card" data-r>
+        <div class="pc-tag">Entry</div>
+        <h3>AI Tools Assessment</h3>
+        <p>AI ambition, fast-tracked: 3–7 concrete tool recommendations for your company.</p>
+        <div class="pc-price">CHF 999 <span>one-time</span></div>
+      </div>
+      <div class="phase-card" data-r>
+        <div class="pc-tag">Phase 1</div>
+        <h3>Discovery</h3>
+        <p>Target picture, workflow analysis, and operating model — services 01–03.</p>
+        <div class="pc-price">CHF 15–25k <span>one-time</span></div>
+      </div>
+      <div class="phase-card" data-r>
+        <div class="pc-tag">Phase 2</div>
+        <h3>Build</h3>
+        <p>Company memory, workflows, agents, integration — services 04–10 in build mode.</p>
+        <div class="pc-price">CHF 20–45k <span>one-time</span></div>
+      </div>
+      <div class="phase-card" data-r>
+        <div class="pc-tag">Phase 3</div>
+        <h3>Operations</h3>
+        <p>Validate, embed, safeguard — ongoing, so the system stays current.</p>
+        <div class="pc-price">CHF 3–8k <span>per month</span></div>
+      </div>
+    </div>
+    <p style="margin-top:32px;font-size:14px;color:var(--tertiary)" data-r>Details on process and pricing: <a href="/en/#zusammenarbeit" style="color:var(--color-orange);font-weight:600">Working together in three phases →</a></p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec" id="cta">
+  <div class="w">
+    <h2 data-r>Where do we start with you?</h2>
+    <p class="sub" data-r>30 minutes are enough to know which services offer the biggest lever for your company.</p>
+    <a href="/en/#cta" class="btn btn-p" data-r>Book an intro call <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="w-wide">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">AI-<span>ffective</span></div>
+        <p class="f-tagline">Making operations intelligent. So leadership can be leadership again.</p>
+        <div class="f-contact">
+          <a href="mailto:info@ai-ffective.com">info@ai-ffective.com</a>
+          <span>Zurich, Switzerland</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col">
+          <strong>Offering</strong>
+          <a href="/en/#problem">The Problem</a>
+          <a href="/en/#loesung">The Intelligence Layer</a>
+          <a href="/en/services/">Services</a>
+          <a href="/en/#zusammenarbeit">Working Together</a>
+          <a href="/en/#branchen">Industries</a>
+        </div>
+        <div class="fl-col">
+          <strong>Company</strong>
+          <a href="/en/#fuer-wen">Who It's For</a>
+          <a href="/en/#faq">FAQ</a>
+          <a href="/en/blog/">Blog</a>
+          <a href="/impressum.html">Legal Notice</a>
+          <a href="/datenschutz.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&#169; 2026 AI-ffective — Managed AI Operations</span>
+      <span>Zurich, Switzerland &middot; FADP-compliant</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const o=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('v')})},{threshold:.05});
+document.querySelectorAll('[data-r]').forEach(e=>o.observe(e));
+setTimeout(()=>{document.querySelectorAll('[data-r]').forEach(e=>e.classList.add('v'))},1200);
+const nav=document.querySelector('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>32)},{passive:true});
+const t=document.getElementById('nT'),m=document.getElementById('nM');
+t.addEventListener('click',()=>{m.classList.toggle('open');t.classList.toggle('on')});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');t.classList.remove('on')}));
+</script>
+</body>
+</html>

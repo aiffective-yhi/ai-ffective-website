@@ -4,9 +4,9 @@
 AI-ffective ist ein Managed AI Operations Unternehmen mit Sitz in Baar, Kanton Zug, Schweiz. Wir bauen, betreiben und entwickeln die KI-Betriebsschicht für Schweizer Unternehmen mit 50–500 Mitarbeitenden.
 
 **Gründer:** Yannick Hirt, Baar ZG
-**Kontakt:** info@odcus.com
-**Website:** https://ai-ffective.netlify.app
-**Blog:** https://ai-ffective.netlify.app/blog/
+**Kontakt:** info@ai-ffective.com
+**Website:** https://ai-ffective.com
+**Blog:** https://ai-ffective.com/blog/
 **Sprache:** Deutsch (Schweiz)
 
 ## Was wir tun
@@ -20,6 +20,25 @@ Wir bauen einen strukturierten KI-Wissensspeicher (Unternehmenskontext) für Sch
 - DSG- und DSGVO-konform
 
 ## Dienstleistungen und Preise
+Detailseite: https://ai-ffective.com/leistungen/ (English: https://ai-ffective.com/en/services/)
+
+Zehn Leistungen in zwei Feldern:
+
+**Feld 1 — KI-Potenzial erkennen** (Assessment + Phase 1):
+1. KI-Ambition & Zielbild
+2. Workflow-Analyse & Neugestaltung
+3. KI-Betriebsmodell
+
+**Feld 2 — Lösung bauen & betreiben** (Phase 2 + 3):
+4. Unternehmensgedächtnis
+5. KI-Arbeitsabläufe & Briefings
+6. Agentische Architekturen
+7. Entwicklung & Datenanbindung
+8. Testen & Validieren
+9. Verankerung & Adoption
+10. Sicherheit & Leitplanken
+
+Preise nach Phasen:
 - **AI Tools Assessment:** CHF 999 — Bestandsaufnahme aller KI-Tools im Unternehmen, Ergebnis in einer Woche
 - **Phase 1 – Durchleuchtung:** CHF 15'000–25'000 — Analyse der Informationsflüsse, Identifikation der 3 grössten Hebel
 - **Phase 2 – Aufbau:** CHF 20'000–45'000 — Aufbau des Unternehmenskontexts und der KI-Werkzeuge
@@ -50,5 +69,5 @@ Beide Tracks sind DSG- (Schweizer Datenschutzgesetz) und DSGVO-konform.
 **Was wenn sich die Technologie ändert?** Unser Wert liegt im Unternehmenskontext, nicht im Tool. Bei Technologiewechseln migrieren wir.
 
 ## Blog
-- Die neue Betriebsschicht: Wie KI die Architektur deines Unternehmens verändert — https://ai-ffective.netlify.app/blog/ki-betriebsschicht/
-- (English) The New Operating Layer: How AI Changes Your Company's Architecture — https://ai-ffective.netlify.app/en/blog/ai-operating-layer/
+- Die neue Betriebsschicht: Wie KI die Architektur deines Unternehmens verändert — https://ai-ffective.com/blog/ki-betriebsschicht/
+- (English) The New Operating Layer: How AI Changes Your Company's Architecture — https://ai-ffective.com/en/blog/ai-operating-layer/
